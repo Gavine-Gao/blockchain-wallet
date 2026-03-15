@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package blockchain;
+
+option go_package = "./proto/common";
+
+enum ReturnCode{
+  SUCCESS = 0;
+  ERROR = 1;
+}

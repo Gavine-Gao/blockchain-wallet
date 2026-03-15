@@ -1,0 +1,31 @@
+package litecoin
+
+import (
+	"math"
+	"math/big"
+	"strconv"
+
+	"github.com/shopspring/decimal"
+
+	"github.com/Gavine-Gao/blockchain-wallet-utxo/rpc/utxo"
+)
+
+const (
+	ltcDecimals = 8
+)
+
+type DecodeTxRes struct {
+	Hash       string
+	SignHashes [][]byte
+	Vins       []*utxo.Vin
+	Vouts      []*utxo.Vout
+	CostFee    *big.Int
+}
+
+func ltcToSatoshi(ltcCount float64) *big.Int {
+	amount := strconv.FormatFloat(ltcCount, 'f', -1, 64)
+	amountDm, _ := decimal.NewFromString(amount)
+	tenDm := decimal.NewFromFloat(math.Pow(10, float64(ltcDecimals)))
+	satoshiDm, _ := big.NewInt(0).SetString(amountDm.Mul(tenDm).String(), 10)
+	return satoshiDm
+}

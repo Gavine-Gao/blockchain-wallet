@@ -1,0 +1,5 @@
+.idea
+./blockchain-wallet-utxo
+.vscode
+__debug_bin*
+**/blockchain-wallet-utxo
