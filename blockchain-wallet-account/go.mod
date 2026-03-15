@@ -6,7 +6,7 @@ require (
 	cosmossdk.io/api v0.7.5
 	github.com/aptos-labs/aptos-go-sdk v1.0.0
 	github.com/cosmos/cosmos-sdk v0.50.10
-	github.com/dapplink-labs/chain-explorer-api v0.0.4
+	github.com/Gavine-Gao/chain-explorer-api v0.0.4
 	github.com/ethereum/go-ethereum v1.15.6
 	github.com/go-resty/resty/v2 v2.15.3
 	github.com/golang/protobuf v1.5.4

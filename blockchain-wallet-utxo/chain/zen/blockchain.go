@@ -13,7 +13,7 @@ import (
 
 	"github.com/Gavine-Gao/blockchain-wallet-utxo/chain/zen/types"
 	"github.com/Gavine-Gao/blockchain-wallet-utxo/chain/zen/util"
-	"github.com/dapplink-labs/chain-explorer-api/common/gas_fee"
+	"github.com/Gavine-Gao/chain-explorer-api/common/gas_fee"
 )
 
 var errBlockChainHTTPError = errors.New("blockchain http error")

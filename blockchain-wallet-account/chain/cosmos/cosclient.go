@@ -26,7 +26,7 @@ import (
 	"github.com/Gavine-Gao/blockchain-wallet-account/common/helpers"
 	"github.com/Gavine-Gao/blockchain-wallet-account/common/retry"
 	"github.com/Gavine-Gao/blockchain-wallet-account/config"
-	"github.com/dapplink-labs/chain-explorer-api/explorer/oklink"
+	"github.com/Gavine-Gao/chain-explorer-api/explorer/oklink"
 )
 
 const (

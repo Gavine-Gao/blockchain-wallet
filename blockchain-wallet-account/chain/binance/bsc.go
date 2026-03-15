@@ -28,7 +28,7 @@ import (
 	"github.com/Gavine-Gao/blockchain-wallet-account/config"
 	"github.com/Gavine-Gao/blockchain-wallet-account/rpc/account"
 	"github.com/Gavine-Gao/blockchain-wallet-account/rpc/common"
-	account2 "github.com/dapplink-labs/chain-explorer-api/common/account"
+	account2 "github.com/Gavine-Gao/chain-explorer-api/common/account"
 )
 
 const ChainName = "BscChain"

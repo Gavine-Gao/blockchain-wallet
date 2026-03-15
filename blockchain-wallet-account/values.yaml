@@ -7,7 +7,7 @@ image:
   tag: ""
 
 imagePullSecrets:
-  - name: dapplink-sercret
+  - name: gavine-secret
 nameOverride: ""
 fullnameOverride: ""
 

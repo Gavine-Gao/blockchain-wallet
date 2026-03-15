@@ -4,7 +4,7 @@
 
 ### 1.1. 克隆项目
 ```
-git clone git@github.com:dapplink-labs/wallet-sign-go.git
+git clone git@github.com:Gavine-Gao/wallet-sign-go.git
 ```
 
 ### 1.2.项目构建
@@ -63,7 +63,7 @@ GLOBAL OPTIONS:
 
 ### 1.1. 克隆项目
 ```
-git clone git@github.com:dapplink-labs/wallet-chain-account.git
+git clone git@github.com:Gavine-Gao/wallet-chain-account.git
 ```
 
 ### 1.2.项目构建
@@ -150,7 +150,7 @@ wallet_node:
 
 ### 1.1. 克隆项目
 ```
-git clone git@github.com:dapplink-labs/multichain-sync-account.git
+git clone git@github.com:Gavine-Gao/multichain-sync-account.git
 ```
 
 ### 1.2.项目构建

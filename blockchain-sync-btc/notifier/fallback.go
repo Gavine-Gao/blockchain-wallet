@@ -37,7 +37,7 @@ func (nc *NotifyClient) BusinessNotify(notifyData *NotifyRequest) (bool, error) 
 	res, err := nc.client.R().
 		SetHeader("Content-Type", "application/json").
 		SetBody(&notifyData).
-		SetResult(&NotifyResponse{}).Post("dapplink/notify")
+		SetResult(&NotifyResponse{}).Post("gavine/notify")
 	if err != nil {
 		log.Error("get transaction fee fail", "err", err)
 		return false, err
