@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.35.2
 // 	protoc        v4.25.3
-// source: protobuf/dapplink-wallet.proto
+// source: protobuf/gavine-wallet.proto
 
 package dal_wallet_go
 
@@ -50,11 +50,11 @@ func (x ReturnCode) String() string {
 }
 
 func (ReturnCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_protobuf_dapplink_wallet_proto_enumTypes[0].Descriptor()
+	return file_protobuf_gavine_wallet_proto_enumTypes[0].Descriptor()
 }
 
 func (ReturnCode) Type() protoreflect.EnumType {
-	return &file_protobuf_dapplink_wallet_proto_enumTypes[0]
+	return &file_protobuf_gavine_wallet_proto_enumTypes[0]
 }
 
 func (x ReturnCode) Number() protoreflect.EnumNumber {
@@ -63,7 +63,7 @@ func (x ReturnCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use ReturnCode.Descriptor instead.
 func (ReturnCode) EnumDescriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{0}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{0}
 }
 
 type PublicKey struct {
@@ -78,7 +78,7 @@ type PublicKey struct {
 
 func (x *PublicKey) Reset() {
 	*x = PublicKey{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[0]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -90,7 +90,7 @@ func (x *PublicKey) String() string {
 func (*PublicKey) ProtoMessage() {}
 
 func (x *PublicKey) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[0]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -103,7 +103,7 @@ func (x *PublicKey) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PublicKey.ProtoReflect.Descriptor instead.
 func (*PublicKey) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{0}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *PublicKey) GetType() uint32 {
@@ -138,7 +138,7 @@ type Address struct {
 
 func (x *Address) Reset() {
 	*x = Address{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[1]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -150,7 +150,7 @@ func (x *Address) String() string {
 func (*Address) ProtoMessage() {}
 
 func (x *Address) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[1]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -163,7 +163,7 @@ func (x *Address) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Address.ProtoReflect.Descriptor instead.
 func (*Address) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{1}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Address) GetType() uint32 {
@@ -194,7 +194,7 @@ type Token struct {
 
 func (x *Token) Reset() {
 	*x = Token{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[2]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -206,7 +206,7 @@ func (x *Token) String() string {
 func (*Token) ProtoMessage() {}
 
 func (x *Token) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[2]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -219,7 +219,7 @@ func (x *Token) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Token.ProtoReflect.Descriptor instead.
 func (*Token) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{2}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Token) GetDecimals() uint32 {
@@ -269,7 +269,7 @@ type BusinessRegisterRequest struct {
 
 func (x *BusinessRegisterRequest) Reset() {
 	*x = BusinessRegisterRequest{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[3]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -281,7 +281,7 @@ func (x *BusinessRegisterRequest) String() string {
 func (*BusinessRegisterRequest) ProtoMessage() {}
 
 func (x *BusinessRegisterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[3]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -294,7 +294,7 @@ func (x *BusinessRegisterRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessRegisterRequest.ProtoReflect.Descriptor instead.
 func (*BusinessRegisterRequest) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{3}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *BusinessRegisterRequest) GetConsumerToken() string {
@@ -329,7 +329,7 @@ type BusinessRegisterResponse struct {
 
 func (x *BusinessRegisterResponse) Reset() {
 	*x = BusinessRegisterResponse{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[4]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -341,7 +341,7 @@ func (x *BusinessRegisterResponse) String() string {
 func (*BusinessRegisterResponse) ProtoMessage() {}
 
 func (x *BusinessRegisterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[4]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -354,7 +354,7 @@ func (x *BusinessRegisterResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessRegisterResponse.ProtoReflect.Descriptor instead.
 func (*BusinessRegisterResponse) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{4}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *BusinessRegisterResponse) GetCode() ReturnCode {
@@ -383,7 +383,7 @@ type ExportAddressesRequest struct {
 
 func (x *ExportAddressesRequest) Reset() {
 	*x = ExportAddressesRequest{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[5]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -395,7 +395,7 @@ func (x *ExportAddressesRequest) String() string {
 func (*ExportAddressesRequest) ProtoMessage() {}
 
 func (x *ExportAddressesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[5]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -408,7 +408,7 @@ func (x *ExportAddressesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExportAddressesRequest.ProtoReflect.Descriptor instead.
 func (*ExportAddressesRequest) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{5}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *ExportAddressesRequest) GetConsumerToken() string {
@@ -444,7 +444,7 @@ type ExportAddressesResponse struct {
 
 func (x *ExportAddressesResponse) Reset() {
 	*x = ExportAddressesResponse{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[6]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -456,7 +456,7 @@ func (x *ExportAddressesResponse) String() string {
 func (*ExportAddressesResponse) ProtoMessage() {}
 
 func (x *ExportAddressesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[6]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -469,7 +469,7 @@ func (x *ExportAddressesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExportAddressesResponse.ProtoReflect.Descriptor instead.
 func (*ExportAddressesResponse) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{6}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *ExportAddressesResponse) GetCode() ReturnCode {
@@ -507,7 +507,7 @@ type Transactions struct {
 
 func (x *Transactions) Reset() {
 	*x = Transactions{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[7]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -519,7 +519,7 @@ func (x *Transactions) String() string {
 func (*Transactions) ProtoMessage() {}
 
 func (x *Transactions) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[7]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -532,7 +532,7 @@ func (x *Transactions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Transactions.ProtoReflect.Descriptor instead.
 func (*Transactions) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{7}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *Transactions) GetTransactionUuid() string {
@@ -582,7 +582,7 @@ type UnSignWithdrawTransactionRequest struct {
 
 func (x *UnSignWithdrawTransactionRequest) Reset() {
 	*x = UnSignWithdrawTransactionRequest{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[8]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -594,7 +594,7 @@ func (x *UnSignWithdrawTransactionRequest) String() string {
 func (*UnSignWithdrawTransactionRequest) ProtoMessage() {}
 
 func (x *UnSignWithdrawTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[8]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -607,7 +607,7 @@ func (x *UnSignWithdrawTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnSignWithdrawTransactionRequest.ProtoReflect.Descriptor instead.
 func (*UnSignWithdrawTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{8}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *UnSignWithdrawTransactionRequest) GetConsumerToken() string {
@@ -643,7 +643,7 @@ type ReturnTransactionHashes struct {
 
 func (x *ReturnTransactionHashes) Reset() {
 	*x = ReturnTransactionHashes{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[9]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -655,7 +655,7 @@ func (x *ReturnTransactionHashes) String() string {
 func (*ReturnTransactionHashes) ProtoMessage() {}
 
 func (x *ReturnTransactionHashes) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[9]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -668,7 +668,7 @@ func (x *ReturnTransactionHashes) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnTransactionHashes.ProtoReflect.Descriptor instead.
 func (*ReturnTransactionHashes) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{9}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *ReturnTransactionHashes) GetTransactionUuid() string {
@@ -704,7 +704,7 @@ type UnSignWithdrawTransactionResponse struct {
 
 func (x *UnSignWithdrawTransactionResponse) Reset() {
 	*x = UnSignWithdrawTransactionResponse{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[10]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -716,7 +716,7 @@ func (x *UnSignWithdrawTransactionResponse) String() string {
 func (*UnSignWithdrawTransactionResponse) ProtoMessage() {}
 
 func (x *UnSignWithdrawTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[10]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -729,7 +729,7 @@ func (x *UnSignWithdrawTransactionResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use UnSignWithdrawTransactionResponse.ProtoReflect.Descriptor instead.
 func (*UnSignWithdrawTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{10}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *UnSignWithdrawTransactionResponse) GetCode() ReturnCode {
@@ -765,7 +765,7 @@ type SignedTransactions struct {
 
 func (x *SignedTransactions) Reset() {
 	*x = SignedTransactions{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[11]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -777,7 +777,7 @@ func (x *SignedTransactions) String() string {
 func (*SignedTransactions) ProtoMessage() {}
 
 func (x *SignedTransactions) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[11]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -790,7 +790,7 @@ func (x *SignedTransactions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SignedTransactions.ProtoReflect.Descriptor instead.
 func (*SignedTransactions) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{11}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *SignedTransactions) GetTransactionUuid() string {
@@ -826,7 +826,7 @@ type SignedWithdrawTransactionRequest struct {
 
 func (x *SignedWithdrawTransactionRequest) Reset() {
 	*x = SignedWithdrawTransactionRequest{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[12]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -838,7 +838,7 @@ func (x *SignedWithdrawTransactionRequest) String() string {
 func (*SignedWithdrawTransactionRequest) ProtoMessage() {}
 
 func (x *SignedWithdrawTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[12]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -851,7 +851,7 @@ func (x *SignedWithdrawTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SignedWithdrawTransactionRequest.ProtoReflect.Descriptor instead.
 func (*SignedWithdrawTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{12}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *SignedWithdrawTransactionRequest) GetConsumerToken() string {
@@ -887,7 +887,7 @@ type ReturnSignedTransactions struct {
 
 func (x *ReturnSignedTransactions) Reset() {
 	*x = ReturnSignedTransactions{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[13]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -899,7 +899,7 @@ func (x *ReturnSignedTransactions) String() string {
 func (*ReturnSignedTransactions) ProtoMessage() {}
 
 func (x *ReturnSignedTransactions) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[13]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -912,7 +912,7 @@ func (x *ReturnSignedTransactions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReturnSignedTransactions.ProtoReflect.Descriptor instead.
 func (*ReturnSignedTransactions) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{13}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *ReturnSignedTransactions) GetTransactionUuid() string {
@@ -948,7 +948,7 @@ type SignedWithdrawTransactionResponse struct {
 
 func (x *SignedWithdrawTransactionResponse) Reset() {
 	*x = SignedWithdrawTransactionResponse{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[14]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -960,7 +960,7 @@ func (x *SignedWithdrawTransactionResponse) String() string {
 func (*SignedWithdrawTransactionResponse) ProtoMessage() {}
 
 func (x *SignedWithdrawTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[14]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -973,7 +973,7 @@ func (x *SignedWithdrawTransactionResponse) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use SignedWithdrawTransactionResponse.ProtoReflect.Descriptor instead.
 func (*SignedWithdrawTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{14}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *SignedWithdrawTransactionResponse) GetCode() ReturnCode {
@@ -1010,7 +1010,7 @@ type Withdraw struct {
 
 func (x *Withdraw) Reset() {
 	*x = Withdraw{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[15]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1022,7 +1022,7 @@ func (x *Withdraw) String() string {
 func (*Withdraw) ProtoMessage() {}
 
 func (x *Withdraw) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[15]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1035,7 +1035,7 @@ func (x *Withdraw) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Withdraw.ProtoReflect.Descriptor instead.
 func (*Withdraw) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{15}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *Withdraw) GetChainId() string {
@@ -1078,7 +1078,7 @@ type SubmitWithdrawRequest struct {
 
 func (x *SubmitWithdrawRequest) Reset() {
 	*x = SubmitWithdrawRequest{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[16]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1090,7 +1090,7 @@ func (x *SubmitWithdrawRequest) String() string {
 func (*SubmitWithdrawRequest) ProtoMessage() {}
 
 func (x *SubmitWithdrawRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[16]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1103,7 +1103,7 @@ func (x *SubmitWithdrawRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SubmitWithdrawRequest.ProtoReflect.Descriptor instead.
 func (*SubmitWithdrawRequest) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{16}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *SubmitWithdrawRequest) GetConsumerToken() string {
@@ -1138,7 +1138,7 @@ type SubmitWithdrawResponse struct {
 
 func (x *SubmitWithdrawResponse) Reset() {
 	*x = SubmitWithdrawResponse{}
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[17]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1150,7 +1150,7 @@ func (x *SubmitWithdrawResponse) String() string {
 func (*SubmitWithdrawResponse) ProtoMessage() {}
 
 func (x *SubmitWithdrawResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_protobuf_dapplink_wallet_proto_msgTypes[17]
+	mi := &file_protobuf_gavine_wallet_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1163,7 +1163,7 @@ func (x *SubmitWithdrawResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SubmitWithdrawResponse.ProtoReflect.Descriptor instead.
 func (*SubmitWithdrawResponse) Descriptor() ([]byte, []int) {
-	return file_protobuf_dapplink_wallet_proto_rawDescGZIP(), []int{17}
+	return file_protobuf_gavine_wallet_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *SubmitWithdrawResponse) GetCode() ReturnCode {
@@ -1180,9 +1180,9 @@ func (x *SubmitWithdrawResponse) GetMsg() string {
 	return ""
 }
 
-var File_protobuf_dapplink_wallet_proto protoreflect.FileDescriptor
+var File_protobuf_gavine_wallet_proto protoreflect.FileDescriptor
 
-var file_protobuf_dapplink_wallet_proto_rawDesc = []byte{
+var file_protobuf_gavine_wallet_proto_rawDesc = []byte{
 	0x0a, 0x1e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2f, 0x64, 0x61, 0x70, 0x70, 0x6c,
 	0x69, 0x6e, 0x6b, 0x2d, 0x77, 0x61, 0x6c, 0x6c, 0x65, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
 	0x12, 0x05, 0x73, 0x79, 0x6e, 0x63, 0x73, 0x22, 0x56, 0x0a, 0x09, 0x50, 0x75, 0x62, 0x6c, 0x69,
@@ -1369,20 +1369,20 @@ var file_protobuf_dapplink_wallet_proto_rawDesc = []byte{
 }
 
 var (
-	file_protobuf_dapplink_wallet_proto_rawDescOnce sync.Once
-	file_protobuf_dapplink_wallet_proto_rawDescData = file_protobuf_dapplink_wallet_proto_rawDesc
+	file_protobuf_gavine_wallet_proto_rawDescOnce sync.Once
+	file_protobuf_gavine_wallet_proto_rawDescData = file_protobuf_gavine_wallet_proto_rawDesc
 )
 
-func file_protobuf_dapplink_wallet_proto_rawDescGZIP() []byte {
-	file_protobuf_dapplink_wallet_proto_rawDescOnce.Do(func() {
-		file_protobuf_dapplink_wallet_proto_rawDescData = protoimpl.X.CompressGZIP(file_protobuf_dapplink_wallet_proto_rawDescData)
+func file_protobuf_gavine_wallet_proto_rawDescGZIP() []byte {
+	file_protobuf_gavine_wallet_proto_rawDescOnce.Do(func() {
+		file_protobuf_gavine_wallet_proto_rawDescData = protoimpl.X.CompressGZIP(file_protobuf_gavine_wallet_proto_rawDescData)
 	})
-	return file_protobuf_dapplink_wallet_proto_rawDescData
+	return file_protobuf_gavine_wallet_proto_rawDescData
 }
 
-var file_protobuf_dapplink_wallet_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_protobuf_dapplink_wallet_proto_msgTypes = make([]protoimpl.MessageInfo, 18)
-var file_protobuf_dapplink_wallet_proto_goTypes = []any{
+var file_protobuf_gavine_wallet_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_protobuf_gavine_wallet_proto_msgTypes = make([]protoimpl.MessageInfo, 18)
+var file_protobuf_gavine_wallet_proto_goTypes = []any{
 	(ReturnCode)(0),                           // 0: syncs.ReturnCode
 	(*PublicKey)(nil),                         // 1: syncs.PublicKey
 	(*Address)(nil),                           // 2: syncs.Address
@@ -1403,7 +1403,7 @@ var file_protobuf_dapplink_wallet_proto_goTypes = []any{
 	(*SubmitWithdrawRequest)(nil),             // 17: syncs.SubmitWithdrawRequest
 	(*SubmitWithdrawResponse)(nil),            // 18: syncs.SubmitWithdrawResponse
 }
-var file_protobuf_dapplink_wallet_proto_depIdxs = []int32{
+var file_protobuf_gavine_wallet_proto_depIdxs = []int32{
 	0,  // 0: syncs.BusinessRegisterResponse.Code:type_name -> syncs.ReturnCode
 	1,  // 1: syncs.ExportAddressesRequest.public_keys:type_name -> syncs.PublicKey
 	0,  // 2: syncs.ExportAddressesResponse.Code:type_name -> syncs.ReturnCode
@@ -1433,28 +1433,28 @@ var file_protobuf_dapplink_wallet_proto_depIdxs = []int32{
 	0,  // [0:12] is the sub-list for field type_name
 }
 
-func init() { file_protobuf_dapplink_wallet_proto_init() }
-func file_protobuf_dapplink_wallet_proto_init() {
-	if File_protobuf_dapplink_wallet_proto != nil {
+func init() { file_protobuf_gavine_wallet_proto_init() }
+func file_protobuf_gavine_wallet_proto_init() {
+	if File_protobuf_gavine_wallet_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_protobuf_dapplink_wallet_proto_rawDesc,
+			RawDescriptor: file_protobuf_gavine_wallet_proto_rawDesc,
 			NumEnums:      1,
 			NumMessages:   18,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_protobuf_dapplink_wallet_proto_goTypes,
-		DependencyIndexes: file_protobuf_dapplink_wallet_proto_depIdxs,
-		EnumInfos:         file_protobuf_dapplink_wallet_proto_enumTypes,
-		MessageInfos:      file_protobuf_dapplink_wallet_proto_msgTypes,
+		GoTypes:           file_protobuf_gavine_wallet_proto_goTypes,
+		DependencyIndexes: file_protobuf_gavine_wallet_proto_depIdxs,
+		EnumInfos:         file_protobuf_gavine_wallet_proto_enumTypes,
+		MessageInfos:      file_protobuf_gavine_wallet_proto_msgTypes,
 	}.Build()
-	File_protobuf_dapplink_wallet_proto = out.File
-	file_protobuf_dapplink_wallet_proto_rawDesc = nil
-	file_protobuf_dapplink_wallet_proto_goTypes = nil
-	file_protobuf_dapplink_wallet_proto_depIdxs = nil
+	File_protobuf_gavine_wallet_proto = out.File
+	file_protobuf_gavine_wallet_proto_rawDesc = nil
+	file_protobuf_gavine_wallet_proto_goTypes = nil
+	file_protobuf_gavine_wallet_proto_depIdxs = nil
 }

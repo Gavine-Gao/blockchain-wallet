@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.8
 // 	protoc        v4.25.3
-// source: dapplink/common.proto
+// source: gavine/common.proto
 
 package common
 
@@ -51,11 +51,11 @@ func (x ReturnCode) String() string {
 }
 
 func (ReturnCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_dapplink_common_proto_enumTypes[0].Descriptor()
+	return file_gavine_common_proto_enumTypes[0].Descriptor()
 }
 
 func (ReturnCode) Type() protoreflect.EnumType {
-	return &file_dapplink_common_proto_enumTypes[0]
+	return &file_gavine_common_proto_enumTypes[0]
 }
 
 func (x ReturnCode) Number() protoreflect.EnumNumber {
@@ -64,36 +64,36 @@ func (x ReturnCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use ReturnCode.Descriptor instead.
 func (ReturnCode) EnumDescriptor() ([]byte, []int) {
-	return file_dapplink_common_proto_rawDescGZIP(), []int{0}
+	return file_gavine_common_proto_rawDescGZIP(), []int{0}
 }
 
-var File_dapplink_common_proto protoreflect.FileDescriptor
+var File_gavine_common_proto protoreflect.FileDescriptor
 
-const file_dapplink_common_proto_rawDesc = "" +
+const file_gavine_common_proto_rawDesc = "" +
 	"\n" +
-	"\x15dapplink/common.proto\x12\bdapplink*$\n" +
+	"\x15gavine/common.proto\x12\bgavine*$\n" +
 	"\n" +
 	"ReturnCode\x12\v\n" +
 	"\aSUCCESS\x10\x00\x12\t\n" +
 	"\x05ERROR\x10\x01B\x10Z\x0e./proto/commonb\x06proto3"
 
 var (
-	file_dapplink_common_proto_rawDescOnce sync.Once
-	file_dapplink_common_proto_rawDescData []byte
+	file_gavine_common_proto_rawDescOnce sync.Once
+	file_gavine_common_proto_rawDescData []byte
 )
 
-func file_dapplink_common_proto_rawDescGZIP() []byte {
-	file_dapplink_common_proto_rawDescOnce.Do(func() {
-		file_dapplink_common_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dapplink_common_proto_rawDesc), len(file_dapplink_common_proto_rawDesc)))
+func file_gavine_common_proto_rawDescGZIP() []byte {
+	file_gavine_common_proto_rawDescOnce.Do(func() {
+		file_gavine_common_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_gavine_common_proto_rawDesc), len(file_gavine_common_proto_rawDesc)))
 	})
-	return file_dapplink_common_proto_rawDescData
+	return file_gavine_common_proto_rawDescData
 }
 
-var file_dapplink_common_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_dapplink_common_proto_goTypes = []any{
-	(ReturnCode)(0), // 0: dapplink.ReturnCode
+var file_gavine_common_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_gavine_common_proto_goTypes = []any{
+	(ReturnCode)(0), // 0: gavine.ReturnCode
 }
-var file_dapplink_common_proto_depIdxs = []int32{
+var file_gavine_common_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -101,26 +101,26 @@ var file_dapplink_common_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_dapplink_common_proto_init() }
-func file_dapplink_common_proto_init() {
-	if File_dapplink_common_proto != nil {
+func init() { file_gavine_common_proto_init() }
+func file_gavine_common_proto_init() {
+	if File_gavine_common_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dapplink_common_proto_rawDesc), len(file_dapplink_common_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_gavine_common_proto_rawDesc), len(file_gavine_common_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   0,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_dapplink_common_proto_goTypes,
-		DependencyIndexes: file_dapplink_common_proto_depIdxs,
-		EnumInfos:         file_dapplink_common_proto_enumTypes,
+		GoTypes:           file_gavine_common_proto_goTypes,
+		DependencyIndexes: file_gavine_common_proto_depIdxs,
+		EnumInfos:         file_gavine_common_proto_enumTypes,
 	}.Build()
-	File_dapplink_common_proto = out.File
-	file_dapplink_common_proto_goTypes = nil
-	file_dapplink_common_proto_depIdxs = nil
+	File_gavine_common_proto = out.File
+	file_gavine_common_proto_goTypes = nil
+	file_gavine_common_proto_depIdxs = nil
 }

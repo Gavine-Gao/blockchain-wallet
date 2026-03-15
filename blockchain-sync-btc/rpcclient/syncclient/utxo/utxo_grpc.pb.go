@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v4.25.3
-// source: dapplink/utxo.proto
+// source: gavine/utxo.proto
 
 package utxo
 
@@ -19,23 +19,23 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	WalletUtxoService_GetSupportChains_FullMethodName        = "/dapplink.utxo.WalletUtxoService/getSupportChains"
-	WalletUtxoService_ConvertAddress_FullMethodName          = "/dapplink.utxo.WalletUtxoService/convertAddress"
-	WalletUtxoService_ValidAddress_FullMethodName            = "/dapplink.utxo.WalletUtxoService/validAddress"
-	WalletUtxoService_GetFee_FullMethodName                  = "/dapplink.utxo.WalletUtxoService/getFee"
-	WalletUtxoService_GetAccount_FullMethodName              = "/dapplink.utxo.WalletUtxoService/getAccount"
-	WalletUtxoService_GetUnspentOutputs_FullMethodName       = "/dapplink.utxo.WalletUtxoService/getUnspentOutputs"
-	WalletUtxoService_GetBlockByNumber_FullMethodName        = "/dapplink.utxo.WalletUtxoService/getBlockByNumber"
-	WalletUtxoService_GetBlockByHash_FullMethodName          = "/dapplink.utxo.WalletUtxoService/getBlockByHash"
-	WalletUtxoService_GetBlockHeaderByHash_FullMethodName    = "/dapplink.utxo.WalletUtxoService/getBlockHeaderByHash"
-	WalletUtxoService_GetBlockHeaderByNumber_FullMethodName  = "/dapplink.utxo.WalletUtxoService/getBlockHeaderByNumber"
-	WalletUtxoService_SendTx_FullMethodName                  = "/dapplink.utxo.WalletUtxoService/SendTx"
-	WalletUtxoService_GetTxByAddress_FullMethodName          = "/dapplink.utxo.WalletUtxoService/getTxByAddress"
-	WalletUtxoService_GetTxByHash_FullMethodName             = "/dapplink.utxo.WalletUtxoService/getTxByHash"
-	WalletUtxoService_CreateUnSignTransaction_FullMethodName = "/dapplink.utxo.WalletUtxoService/createUnSignTransaction"
-	WalletUtxoService_BuildSignedTransaction_FullMethodName  = "/dapplink.utxo.WalletUtxoService/buildSignedTransaction"
-	WalletUtxoService_DecodeTransaction_FullMethodName       = "/dapplink.utxo.WalletUtxoService/decodeTransaction"
-	WalletUtxoService_VerifySignedTransaction_FullMethodName = "/dapplink.utxo.WalletUtxoService/verifySignedTransaction"
+	WalletUtxoService_GetSupportChains_FullMethodName        = "/gavine.utxo.WalletUtxoService/getSupportChains"
+	WalletUtxoService_ConvertAddress_FullMethodName          = "/gavine.utxo.WalletUtxoService/convertAddress"
+	WalletUtxoService_ValidAddress_FullMethodName            = "/gavine.utxo.WalletUtxoService/validAddress"
+	WalletUtxoService_GetFee_FullMethodName                  = "/gavine.utxo.WalletUtxoService/getFee"
+	WalletUtxoService_GetAccount_FullMethodName              = "/gavine.utxo.WalletUtxoService/getAccount"
+	WalletUtxoService_GetUnspentOutputs_FullMethodName       = "/gavine.utxo.WalletUtxoService/getUnspentOutputs"
+	WalletUtxoService_GetBlockByNumber_FullMethodName        = "/gavine.utxo.WalletUtxoService/getBlockByNumber"
+	WalletUtxoService_GetBlockByHash_FullMethodName          = "/gavine.utxo.WalletUtxoService/getBlockByHash"
+	WalletUtxoService_GetBlockHeaderByHash_FullMethodName    = "/gavine.utxo.WalletUtxoService/getBlockHeaderByHash"
+	WalletUtxoService_GetBlockHeaderByNumber_FullMethodName  = "/gavine.utxo.WalletUtxoService/getBlockHeaderByNumber"
+	WalletUtxoService_SendTx_FullMethodName                  = "/gavine.utxo.WalletUtxoService/SendTx"
+	WalletUtxoService_GetTxByAddress_FullMethodName          = "/gavine.utxo.WalletUtxoService/getTxByAddress"
+	WalletUtxoService_GetTxByHash_FullMethodName             = "/gavine.utxo.WalletUtxoService/getTxByHash"
+	WalletUtxoService_CreateUnSignTransaction_FullMethodName = "/gavine.utxo.WalletUtxoService/createUnSignTransaction"
+	WalletUtxoService_BuildSignedTransaction_FullMethodName  = "/gavine.utxo.WalletUtxoService/buildSignedTransaction"
+	WalletUtxoService_DecodeTransaction_FullMethodName       = "/gavine.utxo.WalletUtxoService/decodeTransaction"
+	WalletUtxoService_VerifySignedTransaction_FullMethodName = "/gavine.utxo.WalletUtxoService/verifySignedTransaction"
 )
 
 // WalletUtxoServiceClient is the client API for WalletUtxoService service.
@@ -650,7 +650,7 @@ func _WalletUtxoService_VerifySignedTransaction_Handler(srv interface{}, ctx con
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var WalletUtxoService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "dapplink.utxo.WalletUtxoService",
+	ServiceName: "gavine.utxo.WalletUtxoService",
 	HandlerType: (*WalletUtxoServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -723,5 +723,5 @@ var WalletUtxoService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "dapplink/utxo.proto",
+	Metadata: "gavine/utxo.proto",
 }

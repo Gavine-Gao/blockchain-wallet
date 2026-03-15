@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.8
 // 	protoc        v4.25.3
-// source: dapplink/utxo.proto
+// source: gavine/utxo.proto
 
 package utxo
 
@@ -64,11 +64,11 @@ func (x TxStatus) String() string {
 }
 
 func (TxStatus) Descriptor() protoreflect.EnumDescriptor {
-	return file_dapplink_utxo_proto_enumTypes[0].Descriptor()
+	return file_gavine_utxo_proto_enumTypes[0].Descriptor()
 }
 
 func (TxStatus) Type() protoreflect.EnumType {
-	return &file_dapplink_utxo_proto_enumTypes[0]
+	return &file_gavine_utxo_proto_enumTypes[0]
 }
 
 func (x TxStatus) Number() protoreflect.EnumNumber {
@@ -77,7 +77,7 @@ func (x TxStatus) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use TxStatus.Descriptor instead.
 func (TxStatus) EnumDescriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{0}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{0}
 }
 
 type Vin struct {
@@ -92,7 +92,7 @@ type Vin struct {
 
 func (x *Vin) Reset() {
 	*x = Vin{}
-	mi := &file_dapplink_utxo_proto_msgTypes[0]
+	mi := &file_gavine_utxo_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -104,7 +104,7 @@ func (x *Vin) String() string {
 func (*Vin) ProtoMessage() {}
 
 func (x *Vin) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[0]
+	mi := &file_gavine_utxo_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -117,7 +117,7 @@ func (x *Vin) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Vin.ProtoReflect.Descriptor instead.
 func (*Vin) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{0}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Vin) GetHash() string {
@@ -159,7 +159,7 @@ type Vout struct {
 
 func (x *Vout) Reset() {
 	*x = Vout{}
-	mi := &file_dapplink_utxo_proto_msgTypes[1]
+	mi := &file_gavine_utxo_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -171,7 +171,7 @@ func (x *Vout) String() string {
 func (*Vout) ProtoMessage() {}
 
 func (x *Vout) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[1]
+	mi := &file_gavine_utxo_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -184,7 +184,7 @@ func (x *Vout) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Vout.ProtoReflect.Descriptor instead.
 func (*Vout) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{1}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Vout) GetAddress() string {
@@ -217,7 +217,7 @@ type Address struct {
 
 func (x *Address) Reset() {
 	*x = Address{}
-	mi := &file_dapplink_utxo_proto_msgTypes[2]
+	mi := &file_gavine_utxo_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -229,7 +229,7 @@ func (x *Address) String() string {
 func (*Address) ProtoMessage() {}
 
 func (x *Address) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[2]
+	mi := &file_gavine_utxo_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -242,7 +242,7 @@ func (x *Address) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Address.ProtoReflect.Descriptor instead.
 func (*Address) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{2}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Address) GetAddress() string {
@@ -261,7 +261,7 @@ type Value struct {
 
 func (x *Value) Reset() {
 	*x = Value{}
-	mi := &file_dapplink_utxo_proto_msgTypes[3]
+	mi := &file_gavine_utxo_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -273,7 +273,7 @@ func (x *Value) String() string {
 func (*Value) ProtoMessage() {}
 
 func (x *Value) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[3]
+	mi := &file_gavine_utxo_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -286,7 +286,7 @@ func (x *Value) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Value.ProtoReflect.Descriptor instead.
 func (*Value) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{3}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *Value) GetValue() string {
@@ -304,7 +304,7 @@ type TxMessage struct {
 	Tos           []*Address             `protobuf:"bytes,4,rep,name=tos,proto3" json:"tos,omitempty"`
 	Values        []*Value               `protobuf:"bytes,7,rep,name=values,proto3" json:"values,omitempty"`
 	Fee           string                 `protobuf:"bytes,5,opt,name=fee,proto3" json:"fee,omitempty"`
-	Status        TxStatus               `protobuf:"varint,6,opt,name=status,proto3,enum=dapplink.utxo.TxStatus" json:"status,omitempty"`
+	Status        TxStatus               `protobuf:"varint,6,opt,name=status,proto3,enum=gavine.utxo.TxStatus" json:"status,omitempty"`
 	Type          int32                  `protobuf:"varint,8,opt,name=type,proto3" json:"type,omitempty"`
 	Height        string                 `protobuf:"bytes,9,opt,name=height,proto3" json:"height,omitempty"`
 	Brc20Address  string                 `protobuf:"bytes,10,opt,name=brc20_address,json=brc20Address,proto3" json:"brc20_address,omitempty"`
@@ -315,7 +315,7 @@ type TxMessage struct {
 
 func (x *TxMessage) Reset() {
 	*x = TxMessage{}
-	mi := &file_dapplink_utxo_proto_msgTypes[4]
+	mi := &file_gavine_utxo_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -327,7 +327,7 @@ func (x *TxMessage) String() string {
 func (*TxMessage) ProtoMessage() {}
 
 func (x *TxMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[4]
+	mi := &file_gavine_utxo_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -340,7 +340,7 @@ func (x *TxMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TxMessage.ProtoReflect.Descriptor instead.
 func (*TxMessage) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{4}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *TxMessage) GetHash() string {
@@ -431,7 +431,7 @@ type SupportChainsRequest struct {
 
 func (x *SupportChainsRequest) Reset() {
 	*x = SupportChainsRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[5]
+	mi := &file_gavine_utxo_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -443,7 +443,7 @@ func (x *SupportChainsRequest) String() string {
 func (*SupportChainsRequest) ProtoMessage() {}
 
 func (x *SupportChainsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[5]
+	mi := &file_gavine_utxo_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -456,7 +456,7 @@ func (x *SupportChainsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SupportChainsRequest.ProtoReflect.Descriptor instead.
 func (*SupportChainsRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{5}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *SupportChainsRequest) GetConsumerToken() string {
@@ -482,7 +482,7 @@ func (x *SupportChainsRequest) GetNetwork() string {
 
 type SupportChainsResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Support       bool                   `protobuf:"varint,3,opt,name=support,proto3" json:"support,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -491,7 +491,7 @@ type SupportChainsResponse struct {
 
 func (x *SupportChainsResponse) Reset() {
 	*x = SupportChainsResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[6]
+	mi := &file_gavine_utxo_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -503,7 +503,7 @@ func (x *SupportChainsResponse) String() string {
 func (*SupportChainsResponse) ProtoMessage() {}
 
 func (x *SupportChainsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[6]
+	mi := &file_gavine_utxo_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -516,7 +516,7 @@ func (x *SupportChainsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SupportChainsResponse.ProtoReflect.Descriptor instead.
 func (*SupportChainsResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{6}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *SupportChainsResponse) GetCode() common.ReturnCode {
@@ -553,7 +553,7 @@ type ConvertAddressRequest struct {
 
 func (x *ConvertAddressRequest) Reset() {
 	*x = ConvertAddressRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[7]
+	mi := &file_gavine_utxo_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -565,7 +565,7 @@ func (x *ConvertAddressRequest) String() string {
 func (*ConvertAddressRequest) ProtoMessage() {}
 
 func (x *ConvertAddressRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[7]
+	mi := &file_gavine_utxo_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -578,7 +578,7 @@ func (x *ConvertAddressRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConvertAddressRequest.ProtoReflect.Descriptor instead.
 func (*ConvertAddressRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{7}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *ConvertAddressRequest) GetConsumerToken() string {
@@ -618,7 +618,7 @@ func (x *ConvertAddressRequest) GetPublicKey() string {
 
 type ConvertAddressResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Address       string                 `protobuf:"bytes,3,opt,name=address,proto3" json:"address,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -627,7 +627,7 @@ type ConvertAddressResponse struct {
 
 func (x *ConvertAddressResponse) Reset() {
 	*x = ConvertAddressResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[8]
+	mi := &file_gavine_utxo_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -639,7 +639,7 @@ func (x *ConvertAddressResponse) String() string {
 func (*ConvertAddressResponse) ProtoMessage() {}
 
 func (x *ConvertAddressResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[8]
+	mi := &file_gavine_utxo_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -652,7 +652,7 @@ func (x *ConvertAddressResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ConvertAddressResponse.ProtoReflect.Descriptor instead.
 func (*ConvertAddressResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{8}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *ConvertAddressResponse) GetCode() common.ReturnCode {
@@ -689,7 +689,7 @@ type ValidAddressRequest struct {
 
 func (x *ValidAddressRequest) Reset() {
 	*x = ValidAddressRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[9]
+	mi := &file_gavine_utxo_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -701,7 +701,7 @@ func (x *ValidAddressRequest) String() string {
 func (*ValidAddressRequest) ProtoMessage() {}
 
 func (x *ValidAddressRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[9]
+	mi := &file_gavine_utxo_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -714,7 +714,7 @@ func (x *ValidAddressRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ValidAddressRequest.ProtoReflect.Descriptor instead.
 func (*ValidAddressRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{9}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *ValidAddressRequest) GetConsumerToken() string {
@@ -754,7 +754,7 @@ func (x *ValidAddressRequest) GetAddress() string {
 
 type ValidAddressResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Valid         bool                   `protobuf:"varint,3,opt,name=valid,proto3" json:"valid,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -763,7 +763,7 @@ type ValidAddressResponse struct {
 
 func (x *ValidAddressResponse) Reset() {
 	*x = ValidAddressResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[10]
+	mi := &file_gavine_utxo_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -775,7 +775,7 @@ func (x *ValidAddressResponse) String() string {
 func (*ValidAddressResponse) ProtoMessage() {}
 
 func (x *ValidAddressResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[10]
+	mi := &file_gavine_utxo_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -788,7 +788,7 @@ func (x *ValidAddressResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ValidAddressResponse.ProtoReflect.Descriptor instead.
 func (*ValidAddressResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{10}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *ValidAddressResponse) GetCode() common.ReturnCode {
@@ -825,7 +825,7 @@ type FeeRequest struct {
 
 func (x *FeeRequest) Reset() {
 	*x = FeeRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[11]
+	mi := &file_gavine_utxo_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -837,7 +837,7 @@ func (x *FeeRequest) String() string {
 func (*FeeRequest) ProtoMessage() {}
 
 func (x *FeeRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[11]
+	mi := &file_gavine_utxo_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -850,7 +850,7 @@ func (x *FeeRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FeeRequest.ProtoReflect.Descriptor instead.
 func (*FeeRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{11}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *FeeRequest) GetConsumerToken() string {
@@ -901,7 +901,7 @@ type HdWallet struct {
 
 func (x *HdWallet) Reset() {
 	*x = HdWallet{}
-	mi := &file_dapplink_utxo_proto_msgTypes[12]
+	mi := &file_gavine_utxo_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -913,7 +913,7 @@ func (x *HdWallet) String() string {
 func (*HdWallet) ProtoMessage() {}
 
 func (x *HdWallet) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[12]
+	mi := &file_gavine_utxo_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -926,7 +926,7 @@ func (x *HdWallet) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HdWallet.ProtoReflect.Descriptor instead.
 func (*HdWallet) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{12}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *HdWallet) GetBestFee() string {
@@ -966,7 +966,7 @@ func (x *HdWallet) GetFastFee() string {
 
 type FeeResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	HdWallet      *HdWallet              `protobuf:"bytes,3,opt,name=hd_wallet,json=hdWallet,proto3" json:"hd_wallet,omitempty"`
 	FeeRate       float32                `protobuf:"fixed32,4,opt,name=fee_rate,json=feeRate,proto3" json:"fee_rate,omitempty"`
@@ -976,7 +976,7 @@ type FeeResponse struct {
 
 func (x *FeeResponse) Reset() {
 	*x = FeeResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[13]
+	mi := &file_gavine_utxo_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -988,7 +988,7 @@ func (x *FeeResponse) String() string {
 func (*FeeResponse) ProtoMessage() {}
 
 func (x *FeeResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[13]
+	mi := &file_gavine_utxo_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1001,7 +1001,7 @@ func (x *FeeResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FeeResponse.ProtoReflect.Descriptor instead.
 func (*FeeResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{13}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *FeeResponse) GetCode() common.ReturnCode {
@@ -1045,7 +1045,7 @@ type AccountRequest struct {
 
 func (x *AccountRequest) Reset() {
 	*x = AccountRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[14]
+	mi := &file_gavine_utxo_proto_msgTypes[14]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1057,7 +1057,7 @@ func (x *AccountRequest) String() string {
 func (*AccountRequest) ProtoMessage() {}
 
 func (x *AccountRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[14]
+	mi := &file_gavine_utxo_proto_msgTypes[14]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1070,7 +1070,7 @@ func (x *AccountRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountRequest.ProtoReflect.Descriptor instead.
 func (*AccountRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{14}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *AccountRequest) GetConsumerToken() string {
@@ -1110,7 +1110,7 @@ func (x *AccountRequest) GetBrc20Address() string {
 
 type AccountResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Network       string                 `protobuf:"bytes,3,opt,name=network,proto3" json:"network,omitempty"`
 	Balance       string                 `protobuf:"bytes,4,opt,name=balance,proto3" json:"balance,omitempty"`
@@ -1120,7 +1120,7 @@ type AccountResponse struct {
 
 func (x *AccountResponse) Reset() {
 	*x = AccountResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[15]
+	mi := &file_gavine_utxo_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1132,7 +1132,7 @@ func (x *AccountResponse) String() string {
 func (*AccountResponse) ProtoMessage() {}
 
 func (x *AccountResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[15]
+	mi := &file_gavine_utxo_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1145,7 +1145,7 @@ func (x *AccountResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountResponse.ProtoReflect.Descriptor instead.
 func (*AccountResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{15}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *AccountResponse) GetCode() common.ReturnCode {
@@ -1195,7 +1195,7 @@ type UnspentOutput struct {
 
 func (x *UnspentOutput) Reset() {
 	*x = UnspentOutput{}
-	mi := &file_dapplink_utxo_proto_msgTypes[16]
+	mi := &file_gavine_utxo_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1207,7 +1207,7 @@ func (x *UnspentOutput) String() string {
 func (*UnspentOutput) ProtoMessage() {}
 
 func (x *UnspentOutput) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[16]
+	mi := &file_gavine_utxo_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1220,7 +1220,7 @@ func (x *UnspentOutput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnspentOutput.ProtoReflect.Descriptor instead.
 func (*UnspentOutput) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{16}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *UnspentOutput) GetTxId() string {
@@ -1312,7 +1312,7 @@ type UnspentOutputsRequest struct {
 
 func (x *UnspentOutputsRequest) Reset() {
 	*x = UnspentOutputsRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[17]
+	mi := &file_gavine_utxo_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1324,7 +1324,7 @@ func (x *UnspentOutputsRequest) String() string {
 func (*UnspentOutputsRequest) ProtoMessage() {}
 
 func (x *UnspentOutputsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[17]
+	mi := &file_gavine_utxo_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1337,7 +1337,7 @@ func (x *UnspentOutputsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnspentOutputsRequest.ProtoReflect.Descriptor instead.
 func (*UnspentOutputsRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{17}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *UnspentOutputsRequest) GetConsumerToken() string {
@@ -1370,7 +1370,7 @@ func (x *UnspentOutputsRequest) GetAddress() string {
 
 type UnspentOutputsResponse struct {
 	state          protoimpl.MessageState `protogen:"open.v1"`
-	Code           common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code           common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg            string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	UnspentOutputs []*UnspentOutput       `protobuf:"bytes,3,rep,name=unspent_outputs,json=unspentOutputs,proto3" json:"unspent_outputs,omitempty"`
 	unknownFields  protoimpl.UnknownFields
@@ -1379,7 +1379,7 @@ type UnspentOutputsResponse struct {
 
 func (x *UnspentOutputsResponse) Reset() {
 	*x = UnspentOutputsResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[18]
+	mi := &file_gavine_utxo_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1391,7 +1391,7 @@ func (x *UnspentOutputsResponse) String() string {
 func (*UnspentOutputsResponse) ProtoMessage() {}
 
 func (x *UnspentOutputsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[18]
+	mi := &file_gavine_utxo_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1404,7 +1404,7 @@ func (x *UnspentOutputsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnspentOutputsResponse.ProtoReflect.Descriptor instead.
 func (*UnspentOutputsResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{18}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *UnspentOutputsResponse) GetCode() common.ReturnCode {
@@ -1439,7 +1439,7 @@ type BlockNumberRequest struct {
 
 func (x *BlockNumberRequest) Reset() {
 	*x = BlockNumberRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[19]
+	mi := &file_gavine_utxo_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1451,7 +1451,7 @@ func (x *BlockNumberRequest) String() string {
 func (*BlockNumberRequest) ProtoMessage() {}
 
 func (x *BlockNumberRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[19]
+	mi := &file_gavine_utxo_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1464,7 +1464,7 @@ func (x *BlockNumberRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockNumberRequest.ProtoReflect.Descriptor instead.
 func (*BlockNumberRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{19}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *BlockNumberRequest) GetConsumerToken() string {
@@ -1499,7 +1499,7 @@ type BlockHashRequest struct {
 
 func (x *BlockHashRequest) Reset() {
 	*x = BlockHashRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[20]
+	mi := &file_gavine_utxo_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1511,7 +1511,7 @@ func (x *BlockHashRequest) String() string {
 func (*BlockHashRequest) ProtoMessage() {}
 
 func (x *BlockHashRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[20]
+	mi := &file_gavine_utxo_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1524,7 +1524,7 @@ func (x *BlockHashRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHashRequest.ProtoReflect.Descriptor instead.
 func (*BlockHashRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{20}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *BlockHashRequest) GetConsumerToken() string {
@@ -1560,7 +1560,7 @@ type TransactionList struct {
 
 func (x *TransactionList) Reset() {
 	*x = TransactionList{}
-	mi := &file_dapplink_utxo_proto_msgTypes[21]
+	mi := &file_gavine_utxo_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1572,7 +1572,7 @@ func (x *TransactionList) String() string {
 func (*TransactionList) ProtoMessage() {}
 
 func (x *TransactionList) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[21]
+	mi := &file_gavine_utxo_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1585,7 +1585,7 @@ func (x *TransactionList) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionList.ProtoReflect.Descriptor instead.
 func (*TransactionList) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{21}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *TransactionList) GetHash() string {
@@ -1618,7 +1618,7 @@ func (x *TransactionList) GetVout() []*Vout {
 
 type BlockResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Height        uint64                 `protobuf:"varint,3,opt,name=height,proto3" json:"height,omitempty"`
 	Hash          string                 `protobuf:"bytes,4,opt,name=hash,proto3" json:"hash,omitempty"`
@@ -1629,7 +1629,7 @@ type BlockResponse struct {
 
 func (x *BlockResponse) Reset() {
 	*x = BlockResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[22]
+	mi := &file_gavine_utxo_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1641,7 +1641,7 @@ func (x *BlockResponse) String() string {
 func (*BlockResponse) ProtoMessage() {}
 
 func (x *BlockResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[22]
+	mi := &file_gavine_utxo_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1654,7 +1654,7 @@ func (x *BlockResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockResponse.ProtoReflect.Descriptor instead.
 func (*BlockResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{22}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *BlockResponse) GetCode() common.ReturnCode {
@@ -1703,7 +1703,7 @@ type BlockHeaderHashRequest struct {
 
 func (x *BlockHeaderHashRequest) Reset() {
 	*x = BlockHeaderHashRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[23]
+	mi := &file_gavine_utxo_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1715,7 +1715,7 @@ func (x *BlockHeaderHashRequest) String() string {
 func (*BlockHeaderHashRequest) ProtoMessage() {}
 
 func (x *BlockHeaderHashRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[23]
+	mi := &file_gavine_utxo_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1728,7 +1728,7 @@ func (x *BlockHeaderHashRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHeaderHashRequest.ProtoReflect.Descriptor instead.
 func (*BlockHeaderHashRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{23}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *BlockHeaderHashRequest) GetChain() string {
@@ -1763,7 +1763,7 @@ type BlockHeaderNumberRequest struct {
 
 func (x *BlockHeaderNumberRequest) Reset() {
 	*x = BlockHeaderNumberRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[24]
+	mi := &file_gavine_utxo_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1775,7 +1775,7 @@ func (x *BlockHeaderNumberRequest) String() string {
 func (*BlockHeaderNumberRequest) ProtoMessage() {}
 
 func (x *BlockHeaderNumberRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[24]
+	mi := &file_gavine_utxo_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1788,7 +1788,7 @@ func (x *BlockHeaderNumberRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHeaderNumberRequest.ProtoReflect.Descriptor instead.
 func (*BlockHeaderNumberRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{24}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *BlockHeaderNumberRequest) GetChain() string {
@@ -1814,7 +1814,7 @@ func (x *BlockHeaderNumberRequest) GetHeight() int64 {
 
 type BlockHeaderResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	ParentHash    string                 `protobuf:"bytes,3,opt,name=parent_hash,json=parentHash,proto3" json:"parent_hash,omitempty"`
 	BlockHash     string                 `protobuf:"bytes,4,opt,name=block_hash,json=blockHash,proto3" json:"block_hash,omitempty"`
@@ -1826,7 +1826,7 @@ type BlockHeaderResponse struct {
 
 func (x *BlockHeaderResponse) Reset() {
 	*x = BlockHeaderResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[25]
+	mi := &file_gavine_utxo_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1838,7 +1838,7 @@ func (x *BlockHeaderResponse) String() string {
 func (*BlockHeaderResponse) ProtoMessage() {}
 
 func (x *BlockHeaderResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[25]
+	mi := &file_gavine_utxo_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1851,7 +1851,7 @@ func (x *BlockHeaderResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHeaderResponse.ProtoReflect.Descriptor instead.
 func (*BlockHeaderResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{25}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *BlockHeaderResponse) GetCode() common.ReturnCode {
@@ -1909,7 +1909,7 @@ type SendTxRequest struct {
 
 func (x *SendTxRequest) Reset() {
 	*x = SendTxRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[26]
+	mi := &file_gavine_utxo_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1921,7 +1921,7 @@ func (x *SendTxRequest) String() string {
 func (*SendTxRequest) ProtoMessage() {}
 
 func (x *SendTxRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[26]
+	mi := &file_gavine_utxo_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1934,7 +1934,7 @@ func (x *SendTxRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendTxRequest.ProtoReflect.Descriptor instead.
 func (*SendTxRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{26}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *SendTxRequest) GetConsumerToken() string {
@@ -1974,7 +1974,7 @@ func (x *SendTxRequest) GetRawTx() string {
 
 type SendTxResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	TxHash        string                 `protobuf:"bytes,3,opt,name=tx_hash,json=txHash,proto3" json:"tx_hash,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -1983,7 +1983,7 @@ type SendTxResponse struct {
 
 func (x *SendTxResponse) Reset() {
 	*x = SendTxResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[27]
+	mi := &file_gavine_utxo_proto_msgTypes[27]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1995,7 +1995,7 @@ func (x *SendTxResponse) String() string {
 func (*SendTxResponse) ProtoMessage() {}
 
 func (x *SendTxResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[27]
+	mi := &file_gavine_utxo_proto_msgTypes[27]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2008,7 +2008,7 @@ func (x *SendTxResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendTxResponse.ProtoReflect.Descriptor instead.
 func (*SendTxResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{27}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *SendTxResponse) GetCode() common.ReturnCode {
@@ -2049,7 +2049,7 @@ type TxAddressRequest struct {
 
 func (x *TxAddressRequest) Reset() {
 	*x = TxAddressRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[28]
+	mi := &file_gavine_utxo_proto_msgTypes[28]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2061,7 +2061,7 @@ func (x *TxAddressRequest) String() string {
 func (*TxAddressRequest) ProtoMessage() {}
 
 func (x *TxAddressRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[28]
+	mi := &file_gavine_utxo_proto_msgTypes[28]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2074,7 +2074,7 @@ func (x *TxAddressRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TxAddressRequest.ProtoReflect.Descriptor instead.
 func (*TxAddressRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{28}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *TxAddressRequest) GetConsumerToken() string {
@@ -2142,7 +2142,7 @@ func (x *TxAddressRequest) GetCursor() string {
 
 type TxAddressResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Tx            []*TxMessage           `protobuf:"bytes,3,rep,name=tx,proto3" json:"tx,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -2151,7 +2151,7 @@ type TxAddressResponse struct {
 
 func (x *TxAddressResponse) Reset() {
 	*x = TxAddressResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[29]
+	mi := &file_gavine_utxo_proto_msgTypes[29]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2163,7 +2163,7 @@ func (x *TxAddressResponse) String() string {
 func (*TxAddressResponse) ProtoMessage() {}
 
 func (x *TxAddressResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[29]
+	mi := &file_gavine_utxo_proto_msgTypes[29]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2176,7 +2176,7 @@ func (x *TxAddressResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TxAddressResponse.ProtoReflect.Descriptor instead.
 func (*TxAddressResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{29}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *TxAddressResponse) GetCode() common.ReturnCode {
@@ -2213,7 +2213,7 @@ type TxHashRequest struct {
 
 func (x *TxHashRequest) Reset() {
 	*x = TxHashRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[30]
+	mi := &file_gavine_utxo_proto_msgTypes[30]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2225,7 +2225,7 @@ func (x *TxHashRequest) String() string {
 func (*TxHashRequest) ProtoMessage() {}
 
 func (x *TxHashRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[30]
+	mi := &file_gavine_utxo_proto_msgTypes[30]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2238,7 +2238,7 @@ func (x *TxHashRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TxHashRequest.ProtoReflect.Descriptor instead.
 func (*TxHashRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{30}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *TxHashRequest) GetConsumerToken() string {
@@ -2278,7 +2278,7 @@ func (x *TxHashRequest) GetHash() string {
 
 type TxHashResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Tx            *TxMessage             `protobuf:"bytes,3,opt,name=tx,proto3" json:"tx,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -2287,7 +2287,7 @@ type TxHashResponse struct {
 
 func (x *TxHashResponse) Reset() {
 	*x = TxHashResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[31]
+	mi := &file_gavine_utxo_proto_msgTypes[31]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2299,7 +2299,7 @@ func (x *TxHashResponse) String() string {
 func (*TxHashResponse) ProtoMessage() {}
 
 func (x *TxHashResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[31]
+	mi := &file_gavine_utxo_proto_msgTypes[31]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2312,7 +2312,7 @@ func (x *TxHashResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TxHashResponse.ProtoReflect.Descriptor instead.
 func (*TxHashResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{31}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *TxHashResponse) GetCode() common.ReturnCode {
@@ -2350,7 +2350,7 @@ type UnSignTransactionRequest struct {
 
 func (x *UnSignTransactionRequest) Reset() {
 	*x = UnSignTransactionRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[32]
+	mi := &file_gavine_utxo_proto_msgTypes[32]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2362,7 +2362,7 @@ func (x *UnSignTransactionRequest) String() string {
 func (*UnSignTransactionRequest) ProtoMessage() {}
 
 func (x *UnSignTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[32]
+	mi := &file_gavine_utxo_proto_msgTypes[32]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2375,7 +2375,7 @@ func (x *UnSignTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnSignTransactionRequest.ProtoReflect.Descriptor instead.
 func (*UnSignTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{32}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *UnSignTransactionRequest) GetConsumerToken() string {
@@ -2422,7 +2422,7 @@ func (x *UnSignTransactionRequest) GetVout() []*Vout {
 
 type UnSignTransactionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	TxData        []byte                 `protobuf:"bytes,3,opt,name=tx_data,json=txData,proto3" json:"tx_data,omitempty"`
 	SignHashes    [][]byte               `protobuf:"bytes,4,rep,name=sign_hashes,json=signHashes,proto3" json:"sign_hashes,omitempty"`
@@ -2432,7 +2432,7 @@ type UnSignTransactionResponse struct {
 
 func (x *UnSignTransactionResponse) Reset() {
 	*x = UnSignTransactionResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[33]
+	mi := &file_gavine_utxo_proto_msgTypes[33]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2444,7 +2444,7 @@ func (x *UnSignTransactionResponse) String() string {
 func (*UnSignTransactionResponse) ProtoMessage() {}
 
 func (x *UnSignTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[33]
+	mi := &file_gavine_utxo_proto_msgTypes[33]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2457,7 +2457,7 @@ func (x *UnSignTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnSignTransactionResponse.ProtoReflect.Descriptor instead.
 func (*UnSignTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{33}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *UnSignTransactionResponse) GetCode() common.ReturnCode {
@@ -2502,7 +2502,7 @@ type SignedTransactionRequest struct {
 
 func (x *SignedTransactionRequest) Reset() {
 	*x = SignedTransactionRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[34]
+	mi := &file_gavine_utxo_proto_msgTypes[34]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2514,7 +2514,7 @@ func (x *SignedTransactionRequest) String() string {
 func (*SignedTransactionRequest) ProtoMessage() {}
 
 func (x *SignedTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[34]
+	mi := &file_gavine_utxo_proto_msgTypes[34]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2527,7 +2527,7 @@ func (x *SignedTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SignedTransactionRequest.ProtoReflect.Descriptor instead.
 func (*SignedTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{34}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *SignedTransactionRequest) GetConsumerToken() string {
@@ -2574,7 +2574,7 @@ func (x *SignedTransactionRequest) GetPublicKeys() [][]byte {
 
 type SignedTransactionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	SignedTxData  []byte                 `protobuf:"bytes,3,opt,name=signed_tx_data,json=signedTxData,proto3" json:"signed_tx_data,omitempty"`
 	Hash          []byte                 `protobuf:"bytes,4,opt,name=hash,proto3" json:"hash,omitempty"`
@@ -2584,7 +2584,7 @@ type SignedTransactionResponse struct {
 
 func (x *SignedTransactionResponse) Reset() {
 	*x = SignedTransactionResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[35]
+	mi := &file_gavine_utxo_proto_msgTypes[35]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2596,7 +2596,7 @@ func (x *SignedTransactionResponse) String() string {
 func (*SignedTransactionResponse) ProtoMessage() {}
 
 func (x *SignedTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[35]
+	mi := &file_gavine_utxo_proto_msgTypes[35]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2609,7 +2609,7 @@ func (x *SignedTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SignedTransactionResponse.ProtoReflect.Descriptor instead.
 func (*SignedTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{35}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *SignedTransactionResponse) GetCode() common.ReturnCode {
@@ -2652,7 +2652,7 @@ type VerifyTransactionRequest struct {
 
 func (x *VerifyTransactionRequest) Reset() {
 	*x = VerifyTransactionRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[36]
+	mi := &file_gavine_utxo_proto_msgTypes[36]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2664,7 +2664,7 @@ func (x *VerifyTransactionRequest) String() string {
 func (*VerifyTransactionRequest) ProtoMessage() {}
 
 func (x *VerifyTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[36]
+	mi := &file_gavine_utxo_proto_msgTypes[36]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2677,7 +2677,7 @@ func (x *VerifyTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VerifyTransactionRequest.ProtoReflect.Descriptor instead.
 func (*VerifyTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{36}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *VerifyTransactionRequest) GetChain() string {
@@ -2710,7 +2710,7 @@ func (x *VerifyTransactionRequest) GetSignature() string {
 
 type VerifyTransactionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	Verify        bool                   `protobuf:"varint,3,opt,name=verify,proto3" json:"verify,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -2719,7 +2719,7 @@ type VerifyTransactionResponse struct {
 
 func (x *VerifyTransactionResponse) Reset() {
 	*x = VerifyTransactionResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[37]
+	mi := &file_gavine_utxo_proto_msgTypes[37]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2731,7 +2731,7 @@ func (x *VerifyTransactionResponse) String() string {
 func (*VerifyTransactionResponse) ProtoMessage() {}
 
 func (x *VerifyTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[37]
+	mi := &file_gavine_utxo_proto_msgTypes[37]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2744,7 +2744,7 @@ func (x *VerifyTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VerifyTransactionResponse.ProtoReflect.Descriptor instead.
 func (*VerifyTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{37}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{37}
 }
 
 func (x *VerifyTransactionResponse) GetCode() common.ReturnCode {
@@ -2780,7 +2780,7 @@ type DecodeTransactionRequest struct {
 
 func (x *DecodeTransactionRequest) Reset() {
 	*x = DecodeTransactionRequest{}
-	mi := &file_dapplink_utxo_proto_msgTypes[38]
+	mi := &file_gavine_utxo_proto_msgTypes[38]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2792,7 +2792,7 @@ func (x *DecodeTransactionRequest) String() string {
 func (*DecodeTransactionRequest) ProtoMessage() {}
 
 func (x *DecodeTransactionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[38]
+	mi := &file_gavine_utxo_proto_msgTypes[38]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2805,7 +2805,7 @@ func (x *DecodeTransactionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DecodeTransactionRequest.ProtoReflect.Descriptor instead.
 func (*DecodeTransactionRequest) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{38}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *DecodeTransactionRequest) GetChain() string {
@@ -2838,10 +2838,10 @@ func (x *DecodeTransactionRequest) GetVins() []*Vin {
 
 type DecodeTransactionResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=dapplink.ReturnCode" json:"code,omitempty"`
+	Code          common.ReturnCode      `protobuf:"varint,1,opt,name=code,proto3,enum=gavine.ReturnCode" json:"code,omitempty"`
 	Msg           string                 `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
 	TxHash        string                 `protobuf:"bytes,3,opt,name=tx_hash,json=txHash,proto3" json:"tx_hash,omitempty"`
-	Status        TxStatus               `protobuf:"varint,4,opt,name=status,proto3,enum=dapplink.utxo.TxStatus" json:"status,omitempty"`
+	Status        TxStatus               `protobuf:"varint,4,opt,name=status,proto3,enum=gavine.utxo.TxStatus" json:"status,omitempty"`
 	Vins          []*Vin                 `protobuf:"bytes,5,rep,name=vins,proto3" json:"vins,omitempty"`
 	Vouts         []*Vout                `protobuf:"bytes,6,rep,name=vouts,proto3" json:"vouts,omitempty"`
 	SignHashes    [][]byte               `protobuf:"bytes,7,rep,name=sign_hashes,json=signHashes,proto3" json:"sign_hashes,omitempty"`
@@ -2854,7 +2854,7 @@ type DecodeTransactionResponse struct {
 
 func (x *DecodeTransactionResponse) Reset() {
 	*x = DecodeTransactionResponse{}
-	mi := &file_dapplink_utxo_proto_msgTypes[39]
+	mi := &file_gavine_utxo_proto_msgTypes[39]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2866,7 +2866,7 @@ func (x *DecodeTransactionResponse) String() string {
 func (*DecodeTransactionResponse) ProtoMessage() {}
 
 func (x *DecodeTransactionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_dapplink_utxo_proto_msgTypes[39]
+	mi := &file_gavine_utxo_proto_msgTypes[39]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2879,7 +2879,7 @@ func (x *DecodeTransactionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DecodeTransactionResponse.ProtoReflect.Descriptor instead.
 func (*DecodeTransactionResponse) Descriptor() ([]byte, []int) {
-	return file_dapplink_utxo_proto_rawDescGZIP(), []int{39}
+	return file_gavine_utxo_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *DecodeTransactionResponse) GetCode() common.ReturnCode {
@@ -2952,11 +2952,11 @@ func (x *DecodeTransactionResponse) GetBlockTime() uint64 {
 	return 0
 }
 
-var File_dapplink_utxo_proto protoreflect.FileDescriptor
+var File_gavine_utxo_proto protoreflect.FileDescriptor
 
-const file_dapplink_utxo_proto_rawDesc = "" +
+const file_gavine_utxo_proto_rawDesc = "" +
 	"\n" +
-	"\x13dapplink/utxo.proto\x12\rdapplink.utxo\x1a\x15dapplink/common.proto\"a\n" +
+	"\x13gavine/utxo.proto\x12\rgavine.utxo\x1a\x15gavine/common.proto\"a\n" +
 	"\x03Vin\x12\x12\n" +
 	"\x04hash\x18\x01 \x01(\tR\x04hash\x12\x14\n" +
 	"\x05index\x18\x02 \x01(\rR\x05index\x12\x16\n" +
@@ -2973,11 +2973,11 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\tTxMessage\x12\x12\n" +
 	"\x04hash\x18\x01 \x01(\tR\x04hash\x12\x14\n" +
 	"\x05index\x18\x02 \x01(\rR\x05index\x12,\n" +
-	"\x05froms\x18\x03 \x03(\v2\x16.dapplink.utxo.AddressR\x05froms\x12(\n" +
-	"\x03tos\x18\x04 \x03(\v2\x16.dapplink.utxo.AddressR\x03tos\x12,\n" +
-	"\x06values\x18\a \x03(\v2\x14.dapplink.utxo.ValueR\x06values\x12\x10\n" +
+	"\x05froms\x18\x03 \x03(\v2\x16.gavine.utxo.AddressR\x05froms\x12(\n" +
+	"\x03tos\x18\x04 \x03(\v2\x16.gavine.utxo.AddressR\x03tos\x12,\n" +
+	"\x06values\x18\a \x03(\v2\x14.gavine.utxo.ValueR\x06values\x12\x10\n" +
 	"\x03fee\x18\x05 \x01(\tR\x03fee\x12/\n" +
-	"\x06status\x18\x06 \x01(\x0e2\x17.dapplink.utxo.TxStatusR\x06status\x12\x12\n" +
+	"\x06status\x18\x06 \x01(\x0e2\x17.gavine.utxo.TxStatusR\x06status\x12\x12\n" +
 	"\x04type\x18\b \x01(\x05R\x04type\x12\x16\n" +
 	"\x06height\x18\t \x01(\tR\x06height\x12#\n" +
 	"\rbrc20_address\x18\n" +
@@ -2988,7 +2988,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\x05chain\x18\x02 \x01(\tR\x05chain\x12\x18\n" +
 	"\anetwork\x18\x03 \x01(\tR\anetwork\"m\n" +
 	"\x15SupportChainsResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x18\n" +
 	"\asupport\x18\x03 \x01(\bR\asupport\"\xa5\x01\n" +
 	"\x15ConvertAddressRequest\x12%\n" +
@@ -2999,7 +2999,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\n" +
 	"public_key\x18\x05 \x01(\tR\tpublicKey\"n\n" +
 	"\x16ConvertAddressResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x18\n" +
 	"\aaddress\x18\x03 \x01(\tR\aaddress\"\x9e\x01\n" +
 	"\x13ValidAddressRequest\x12%\n" +
@@ -3009,7 +3009,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\x06format\x18\x04 \x01(\tR\x06format\x12\x18\n" +
 	"\aaddress\x18\x05 \x01(\tR\aaddress\"h\n" +
 	"\x14ValidAddressResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x14\n" +
 	"\x05valid\x18\x03 \x01(\bR\x05valid\"\x8d\x01\n" +
 	"\n" +
@@ -3028,9 +3028,9 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"normal_fee\x18\x06 \x01(\tR\tnormalFee\x12\x19\n" +
 	"\bfast_fee\x18\a \x01(\tR\afastFee\"\x9a\x01\n" +
 	"\vFeeResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x124\n" +
-	"\thd_wallet\x18\x03 \x01(\v2\x17.dapplink.utxo.HdWalletR\bhdWallet\x12\x19\n" +
+	"\thd_wallet\x18\x03 \x01(\v2\x17.gavine.utxo.HdWalletR\bhdWallet\x12\x19\n" +
 	"\bfee_rate\x18\x04 \x01(\x02R\afeeRate\"\xa6\x01\n" +
 	"\x0eAccountRequest\x12%\n" +
 	"\x0econsumer_token\x18\x01 \x01(\tR\rconsumerToken\x12\x14\n" +
@@ -3039,7 +3039,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\aaddress\x18\x04 \x01(\tR\aaddress\x12#\n" +
 	"\rbrc20_address\x18\x05 \x01(\tR\fbrc20Address\"\x81\x01\n" +
 	"\x0fAccountResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x18\n" +
 	"\anetwork\x18\x03 \x01(\tR\anetwork\x12\x18\n" +
 	"\abalance\x18\x04 \x01(\tR\abalance\"\xda\x02\n" +
@@ -3063,9 +3063,9 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\anetwork\x18\x03 \x01(\tR\anetwork\x12\x18\n" +
 	"\aaddress\x18\x04 \x01(\tR\aaddress\"\x9b\x01\n" +
 	"\x16UnspentOutputsResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12E\n" +
-	"\x0funspent_outputs\x18\x03 \x03(\v2\x1c.dapplink.utxo.UnspentOutputR\x0eunspentOutputs\"i\n" +
+	"\x0funspent_outputs\x18\x03 \x03(\v2\x1c.gavine.utxo.UnspentOutputR\x0eunspentOutputs\"i\n" +
 	"\x12BlockNumberRequest\x12%\n" +
 	"\x0econsumer_token\x18\x01 \x01(\tR\rconsumerToken\x12\x14\n" +
 	"\x05chain\x18\x02 \x01(\tR\x05chain\x12\x16\n" +
@@ -3077,14 +3077,14 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\x0fTransactionList\x12\x12\n" +
 	"\x04hash\x18\x01 \x01(\tR\x04hash\x12\x10\n" +
 	"\x03fee\x18\x02 \x01(\tR\x03fee\x12$\n" +
-	"\x03vin\x18\x03 \x03(\v2\x12.dapplink.utxo.VinR\x03vin\x12'\n" +
-	"\x04vout\x18\x04 \x03(\v2\x13.dapplink.utxo.VoutR\x04vout\"\xb0\x01\n" +
+	"\x03vin\x18\x03 \x03(\v2\x12.gavine.utxo.VinR\x03vin\x12'\n" +
+	"\x04vout\x18\x04 \x03(\v2\x13.gavine.utxo.VoutR\x04vout\"\xb0\x01\n" +
 	"\rBlockResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x16\n" +
 	"\x06height\x18\x03 \x01(\x04R\x06height\x12\x12\n" +
 	"\x04hash\x18\x04 \x01(\tR\x04hash\x127\n" +
-	"\atx_list\x18\x05 \x03(\v2\x1e.dapplink.utxo.TransactionListR\x06txList\"\\\n" +
+	"\atx_list\x18\x05 \x03(\v2\x1e.gavine.utxo.TransactionListR\x06txList\"\\\n" +
 	"\x16BlockHeaderHashRequest\x12\x14\n" +
 	"\x05chain\x18\x01 \x01(\tR\x05chain\x12\x18\n" +
 	"\anetwork\x18\x02 \x01(\tR\anetwork\x12\x12\n" +
@@ -3094,7 +3094,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\anetwork\x18\x02 \x01(\tR\anetwork\x12\x16\n" +
 	"\x06height\x18\x03 \x01(\x03R\x06height\"\xca\x01\n" +
 	"\x13BlockHeaderResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x1f\n" +
 	"\vparent_hash\x18\x03 \x01(\tR\n" +
 	"parentHash\x12\x1d\n" +
@@ -3110,7 +3110,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\anetwork\x18\x04 \x01(\tR\anetwork\x12\x15\n" +
 	"\x06raw_tx\x18\x05 \x01(\tR\x05rawTx\"e\n" +
 	"\x0eSendTxResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x17\n" +
 	"\atx_hash\x18\x03 \x01(\tR\x06txHash\"\x84\x02\n" +
 	"\x10TxAddressRequest\x12%\n" +
@@ -3124,9 +3124,9 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\bpagesize\x18\b \x01(\rR\bpagesize\x12\x16\n" +
 	"\x06cursor\x18\t \x01(\tR\x06cursor\"y\n" +
 	"\x11TxAddressResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12(\n" +
-	"\x02tx\x18\x03 \x03(\v2\x18.dapplink.utxo.TxMessageR\x02tx\"\x8e\x01\n" +
+	"\x02tx\x18\x03 \x03(\v2\x18.gavine.utxo.TxMessageR\x02tx\"\x8e\x01\n" +
 	"\rTxHashRequest\x12%\n" +
 	"\x0econsumer_token\x18\x01 \x01(\tR\rconsumerToken\x12\x14\n" +
 	"\x05chain\x18\x02 \x01(\tR\x05chain\x12\x12\n" +
@@ -3134,18 +3134,18 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\anetwork\x18\x04 \x01(\tR\anetwork\x12\x12\n" +
 	"\x04hash\x18\x05 \x01(\tR\x04hash\"v\n" +
 	"\x0eTxHashResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12(\n" +
-	"\x02tx\x18\x03 \x01(\v2\x18.dapplink.utxo.TxMessageR\x02tx\"\xd2\x01\n" +
+	"\x02tx\x18\x03 \x01(\v2\x18.gavine.utxo.TxMessageR\x02tx\"\xd2\x01\n" +
 	"\x18UnSignTransactionRequest\x12%\n" +
 	"\x0econsumer_token\x18\x01 \x01(\tR\rconsumerToken\x12\x14\n" +
 	"\x05chain\x18\x02 \x01(\tR\x05chain\x12\x18\n" +
 	"\anetwork\x18\x03 \x01(\tR\anetwork\x12\x10\n" +
 	"\x03fee\x18\x04 \x01(\tR\x03fee\x12$\n" +
-	"\x03vin\x18\x05 \x03(\v2\x12.dapplink.utxo.VinR\x03vin\x12'\n" +
-	"\x04vout\x18\x06 \x03(\v2\x13.dapplink.utxo.VoutR\x04vout\"\x91\x01\n" +
+	"\x03vin\x18\x05 \x03(\v2\x12.gavine.utxo.VinR\x03vin\x12'\n" +
+	"\x04vout\x18\x06 \x03(\v2\x13.gavine.utxo.VoutR\x04vout\"\x91\x01\n" +
 	"\x19UnSignTransactionResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x17\n" +
 	"\atx_data\x18\x03 \x01(\fR\x06txData\x12\x1f\n" +
 	"\vsign_hashes\x18\x04 \x03(\fR\n" +
@@ -3161,7 +3161,7 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\vpublic_keys\x18\x06 \x03(\fR\n" +
 	"publicKeys\"\x91\x01\n" +
 	"\x19SignedTransactionResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12$\n" +
 	"\x0esigned_tx_data\x18\x03 \x01(\fR\fsignedTxData\x12\x12\n" +
 	"\x04hash\x18\x04 \x01(\fR\x04hash\"\x87\x01\n" +
@@ -3172,21 +3172,21 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"public_key\x18\x03 \x01(\tR\tpublicKey\x12\x1c\n" +
 	"\tsignature\x18\x04 \x01(\tR\tsignature\"o\n" +
 	"\x19VerifyTransactionResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x16\n" +
 	"\x06verify\x18\x03 \x01(\bR\x06verify\"\x8d\x01\n" +
 	"\x18DecodeTransactionRequest\x12\x14\n" +
 	"\x05chain\x18\x01 \x01(\tR\x05chain\x12\x18\n" +
 	"\anetwork\x18\x02 \x01(\tR\anetwork\x12\x19\n" +
 	"\braw_data\x18\x05 \x01(\fR\arawData\x12&\n" +
-	"\x04vins\x18\a \x03(\v2\x12.dapplink.utxo.VinR\x04vins\"\xf2\x02\n" +
+	"\x04vins\x18\a \x03(\v2\x12.gavine.utxo.VinR\x04vins\"\xf2\x02\n" +
 	"\x19DecodeTransactionResponse\x12(\n" +
-	"\x04code\x18\x01 \x01(\x0e2\x14.dapplink.ReturnCodeR\x04code\x12\x10\n" +
+	"\x04code\x18\x01 \x01(\x0e2\x14.gavine.ReturnCodeR\x04code\x12\x10\n" +
 	"\x03msg\x18\x02 \x01(\tR\x03msg\x12\x17\n" +
 	"\atx_hash\x18\x03 \x01(\tR\x06txHash\x12/\n" +
-	"\x06status\x18\x04 \x01(\x0e2\x17.dapplink.utxo.TxStatusR\x06status\x12&\n" +
-	"\x04vins\x18\x05 \x03(\v2\x12.dapplink.utxo.VinR\x04vins\x12)\n" +
-	"\x05vouts\x18\x06 \x03(\v2\x13.dapplink.utxo.VoutR\x05vouts\x12\x1f\n" +
+	"\x06status\x18\x04 \x01(\x0e2\x17.gavine.utxo.TxStatusR\x06status\x12&\n" +
+	"\x04vins\x18\x05 \x03(\v2\x12.gavine.utxo.VinR\x04vins\x12)\n" +
+	"\x05vouts\x18\x06 \x03(\v2\x13.gavine.utxo.VoutR\x05vouts\x12\x1f\n" +
 	"\vsign_hashes\x18\a \x03(\fR\n" +
 	"signHashes\x12\x19\n" +
 	"\bcost_fee\x18\b \x01(\tR\acostFee\x12!\n" +
@@ -3203,151 +3203,151 @@ const file_dapplink_utxo_proto_rawDesc = "" +
 	"\x15ContractExecuteFailed\x10\x04\x12\t\n" +
 	"\x05Other\x10\x052\xc5\f\n" +
 	"\x11WalletUtxoService\x12_\n" +
-	"\x10getSupportChains\x12#.dapplink.utxo.SupportChainsRequest\x1a$.dapplink.utxo.SupportChainsResponse\"\x00\x12_\n" +
-	"\x0econvertAddress\x12$.dapplink.utxo.ConvertAddressRequest\x1a%.dapplink.utxo.ConvertAddressResponse\"\x00\x12Y\n" +
-	"\fvalidAddress\x12\".dapplink.utxo.ValidAddressRequest\x1a#.dapplink.utxo.ValidAddressResponse\"\x00\x12A\n" +
-	"\x06getFee\x12\x19.dapplink.utxo.FeeRequest\x1a\x1a.dapplink.utxo.FeeResponse\"\x00\x12M\n" +
+	"\x10getSupportChains\x12#.gavine.utxo.SupportChainsRequest\x1a$.gavine.utxo.SupportChainsResponse\"\x00\x12_\n" +
+	"\x0econvertAddress\x12$.gavine.utxo.ConvertAddressRequest\x1a%.gavine.utxo.ConvertAddressResponse\"\x00\x12Y\n" +
+	"\fvalidAddress\x12\".gavine.utxo.ValidAddressRequest\x1a#.gavine.utxo.ValidAddressResponse\"\x00\x12A\n" +
+	"\x06getFee\x12\x19.gavine.utxo.FeeRequest\x1a\x1a.gavine.utxo.FeeResponse\"\x00\x12M\n" +
 	"\n" +
-	"getAccount\x12\x1d.dapplink.utxo.AccountRequest\x1a\x1e.dapplink.utxo.AccountResponse\"\x00\x12b\n" +
-	"\x11getUnspentOutputs\x12$.dapplink.utxo.UnspentOutputsRequest\x1a%.dapplink.utxo.UnspentOutputsResponse\"\x00\x12U\n" +
-	"\x10getBlockByNumber\x12!.dapplink.utxo.BlockNumberRequest\x1a\x1c.dapplink.utxo.BlockResponse\"\x00\x12Q\n" +
-	"\x0egetBlockByHash\x12\x1f.dapplink.utxo.BlockHashRequest\x1a\x1c.dapplink.utxo.BlockResponse\"\x00\x12c\n" +
-	"\x14getBlockHeaderByHash\x12%.dapplink.utxo.BlockHeaderHashRequest\x1a\".dapplink.utxo.BlockHeaderResponse\"\x00\x12g\n" +
-	"\x16getBlockHeaderByNumber\x12'.dapplink.utxo.BlockHeaderNumberRequest\x1a\".dapplink.utxo.BlockHeaderResponse\"\x00\x12G\n" +
-	"\x06SendTx\x12\x1c.dapplink.utxo.SendTxRequest\x1a\x1d.dapplink.utxo.SendTxResponse\"\x00\x12U\n" +
-	"\x0egetTxByAddress\x12\x1f.dapplink.utxo.TxAddressRequest\x1a .dapplink.utxo.TxAddressResponse\"\x00\x12L\n" +
-	"\vgetTxByHash\x12\x1c.dapplink.utxo.TxHashRequest\x1a\x1d.dapplink.utxo.TxHashResponse\"\x00\x12n\n" +
-	"\x17createUnSignTransaction\x12'.dapplink.utxo.UnSignTransactionRequest\x1a(.dapplink.utxo.UnSignTransactionResponse\"\x00\x12m\n" +
-	"\x16buildSignedTransaction\x12'.dapplink.utxo.SignedTransactionRequest\x1a(.dapplink.utxo.SignedTransactionResponse\"\x00\x12h\n" +
-	"\x11decodeTransaction\x12'.dapplink.utxo.DecodeTransactionRequest\x1a(.dapplink.utxo.DecodeTransactionResponse\"\x00\x12n\n" +
-	"\x17verifySignedTransaction\x12'.dapplink.utxo.VerifyTransactionRequest\x1a(.dapplink.utxo.VerifyTransactionResponse\"\x00B!\n" +
-	"\x11xyz.dapplink.utxoZ\f./proto/utxob\x06proto3"
+	"getAccount\x12\x1d.gavine.utxo.AccountRequest\x1a\x1e.gavine.utxo.AccountResponse\"\x00\x12b\n" +
+	"\x11getUnspentOutputs\x12$.gavine.utxo.UnspentOutputsRequest\x1a%.gavine.utxo.UnspentOutputsResponse\"\x00\x12U\n" +
+	"\x10getBlockByNumber\x12!.gavine.utxo.BlockNumberRequest\x1a\x1c.gavine.utxo.BlockResponse\"\x00\x12Q\n" +
+	"\x0egetBlockByHash\x12\x1f.gavine.utxo.BlockHashRequest\x1a\x1c.gavine.utxo.BlockResponse\"\x00\x12c\n" +
+	"\x14getBlockHeaderByHash\x12%.gavine.utxo.BlockHeaderHashRequest\x1a\".gavine.utxo.BlockHeaderResponse\"\x00\x12g\n" +
+	"\x16getBlockHeaderByNumber\x12'.gavine.utxo.BlockHeaderNumberRequest\x1a\".gavine.utxo.BlockHeaderResponse\"\x00\x12G\n" +
+	"\x06SendTx\x12\x1c.gavine.utxo.SendTxRequest\x1a\x1d.gavine.utxo.SendTxResponse\"\x00\x12U\n" +
+	"\x0egetTxByAddress\x12\x1f.gavine.utxo.TxAddressRequest\x1a .gavine.utxo.TxAddressResponse\"\x00\x12L\n" +
+	"\vgetTxByHash\x12\x1c.gavine.utxo.TxHashRequest\x1a\x1d.gavine.utxo.TxHashResponse\"\x00\x12n\n" +
+	"\x17createUnSignTransaction\x12'.gavine.utxo.UnSignTransactionRequest\x1a(.gavine.utxo.UnSignTransactionResponse\"\x00\x12m\n" +
+	"\x16buildSignedTransaction\x12'.gavine.utxo.SignedTransactionRequest\x1a(.gavine.utxo.SignedTransactionResponse\"\x00\x12h\n" +
+	"\x11decodeTransaction\x12'.gavine.utxo.DecodeTransactionRequest\x1a(.gavine.utxo.DecodeTransactionResponse\"\x00\x12n\n" +
+	"\x17verifySignedTransaction\x12'.gavine.utxo.VerifyTransactionRequest\x1a(.gavine.utxo.VerifyTransactionResponse\"\x00B!\n" +
+	"\x11xyz.gavine.utxoZ\f./proto/utxob\x06proto3"
 
 var (
-	file_dapplink_utxo_proto_rawDescOnce sync.Once
-	file_dapplink_utxo_proto_rawDescData []byte
+	file_gavine_utxo_proto_rawDescOnce sync.Once
+	file_gavine_utxo_proto_rawDescData []byte
 )
 
-func file_dapplink_utxo_proto_rawDescGZIP() []byte {
-	file_dapplink_utxo_proto_rawDescOnce.Do(func() {
-		file_dapplink_utxo_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dapplink_utxo_proto_rawDesc), len(file_dapplink_utxo_proto_rawDesc)))
+func file_gavine_utxo_proto_rawDescGZIP() []byte {
+	file_gavine_utxo_proto_rawDescOnce.Do(func() {
+		file_gavine_utxo_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_gavine_utxo_proto_rawDesc), len(file_gavine_utxo_proto_rawDesc)))
 	})
-	return file_dapplink_utxo_proto_rawDescData
+	return file_gavine_utxo_proto_rawDescData
 }
 
-var file_dapplink_utxo_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_dapplink_utxo_proto_msgTypes = make([]protoimpl.MessageInfo, 40)
-var file_dapplink_utxo_proto_goTypes = []any{
-	(TxStatus)(0),                     // 0: dapplink.utxo.TxStatus
-	(*Vin)(nil),                       // 1: dapplink.utxo.Vin
-	(*Vout)(nil),                      // 2: dapplink.utxo.Vout
-	(*Address)(nil),                   // 3: dapplink.utxo.Address
-	(*Value)(nil),                     // 4: dapplink.utxo.Value
-	(*TxMessage)(nil),                 // 5: dapplink.utxo.TxMessage
-	(*SupportChainsRequest)(nil),      // 6: dapplink.utxo.SupportChainsRequest
-	(*SupportChainsResponse)(nil),     // 7: dapplink.utxo.SupportChainsResponse
-	(*ConvertAddressRequest)(nil),     // 8: dapplink.utxo.ConvertAddressRequest
-	(*ConvertAddressResponse)(nil),    // 9: dapplink.utxo.ConvertAddressResponse
-	(*ValidAddressRequest)(nil),       // 10: dapplink.utxo.ValidAddressRequest
-	(*ValidAddressResponse)(nil),      // 11: dapplink.utxo.ValidAddressResponse
-	(*FeeRequest)(nil),                // 12: dapplink.utxo.FeeRequest
-	(*HdWallet)(nil),                  // 13: dapplink.utxo.HdWallet
-	(*FeeResponse)(nil),               // 14: dapplink.utxo.FeeResponse
-	(*AccountRequest)(nil),            // 15: dapplink.utxo.AccountRequest
-	(*AccountResponse)(nil),           // 16: dapplink.utxo.AccountResponse
-	(*UnspentOutput)(nil),             // 17: dapplink.utxo.UnspentOutput
-	(*UnspentOutputsRequest)(nil),     // 18: dapplink.utxo.UnspentOutputsRequest
-	(*UnspentOutputsResponse)(nil),    // 19: dapplink.utxo.UnspentOutputsResponse
-	(*BlockNumberRequest)(nil),        // 20: dapplink.utxo.BlockNumberRequest
-	(*BlockHashRequest)(nil),          // 21: dapplink.utxo.BlockHashRequest
-	(*TransactionList)(nil),           // 22: dapplink.utxo.TransactionList
-	(*BlockResponse)(nil),             // 23: dapplink.utxo.BlockResponse
-	(*BlockHeaderHashRequest)(nil),    // 24: dapplink.utxo.BlockHeaderHashRequest
-	(*BlockHeaderNumberRequest)(nil),  // 25: dapplink.utxo.BlockHeaderNumberRequest
-	(*BlockHeaderResponse)(nil),       // 26: dapplink.utxo.BlockHeaderResponse
-	(*SendTxRequest)(nil),             // 27: dapplink.utxo.SendTxRequest
-	(*SendTxResponse)(nil),            // 28: dapplink.utxo.SendTxResponse
-	(*TxAddressRequest)(nil),          // 29: dapplink.utxo.TxAddressRequest
-	(*TxAddressResponse)(nil),         // 30: dapplink.utxo.TxAddressResponse
-	(*TxHashRequest)(nil),             // 31: dapplink.utxo.TxHashRequest
-	(*TxHashResponse)(nil),            // 32: dapplink.utxo.TxHashResponse
-	(*UnSignTransactionRequest)(nil),  // 33: dapplink.utxo.UnSignTransactionRequest
-	(*UnSignTransactionResponse)(nil), // 34: dapplink.utxo.UnSignTransactionResponse
-	(*SignedTransactionRequest)(nil),  // 35: dapplink.utxo.SignedTransactionRequest
-	(*SignedTransactionResponse)(nil), // 36: dapplink.utxo.SignedTransactionResponse
-	(*VerifyTransactionRequest)(nil),  // 37: dapplink.utxo.VerifyTransactionRequest
-	(*VerifyTransactionResponse)(nil), // 38: dapplink.utxo.VerifyTransactionResponse
-	(*DecodeTransactionRequest)(nil),  // 39: dapplink.utxo.DecodeTransactionRequest
-	(*DecodeTransactionResponse)(nil), // 40: dapplink.utxo.DecodeTransactionResponse
-	(common.ReturnCode)(0),            // 41: dapplink.ReturnCode
+var file_gavine_utxo_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_gavine_utxo_proto_msgTypes = make([]protoimpl.MessageInfo, 40)
+var file_gavine_utxo_proto_goTypes = []any{
+	(TxStatus)(0),                     // 0: gavine.utxo.TxStatus
+	(*Vin)(nil),                       // 1: gavine.utxo.Vin
+	(*Vout)(nil),                      // 2: gavine.utxo.Vout
+	(*Address)(nil),                   // 3: gavine.utxo.Address
+	(*Value)(nil),                     // 4: gavine.utxo.Value
+	(*TxMessage)(nil),                 // 5: gavine.utxo.TxMessage
+	(*SupportChainsRequest)(nil),      // 6: gavine.utxo.SupportChainsRequest
+	(*SupportChainsResponse)(nil),     // 7: gavine.utxo.SupportChainsResponse
+	(*ConvertAddressRequest)(nil),     // 8: gavine.utxo.ConvertAddressRequest
+	(*ConvertAddressResponse)(nil),    // 9: gavine.utxo.ConvertAddressResponse
+	(*ValidAddressRequest)(nil),       // 10: gavine.utxo.ValidAddressRequest
+	(*ValidAddressResponse)(nil),      // 11: gavine.utxo.ValidAddressResponse
+	(*FeeRequest)(nil),                // 12: gavine.utxo.FeeRequest
+	(*HdWallet)(nil),                  // 13: gavine.utxo.HdWallet
+	(*FeeResponse)(nil),               // 14: gavine.utxo.FeeResponse
+	(*AccountRequest)(nil),            // 15: gavine.utxo.AccountRequest
+	(*AccountResponse)(nil),           // 16: gavine.utxo.AccountResponse
+	(*UnspentOutput)(nil),             // 17: gavine.utxo.UnspentOutput
+	(*UnspentOutputsRequest)(nil),     // 18: gavine.utxo.UnspentOutputsRequest
+	(*UnspentOutputsResponse)(nil),    // 19: gavine.utxo.UnspentOutputsResponse
+	(*BlockNumberRequest)(nil),        // 20: gavine.utxo.BlockNumberRequest
+	(*BlockHashRequest)(nil),          // 21: gavine.utxo.BlockHashRequest
+	(*TransactionList)(nil),           // 22: gavine.utxo.TransactionList
+	(*BlockResponse)(nil),             // 23: gavine.utxo.BlockResponse
+	(*BlockHeaderHashRequest)(nil),    // 24: gavine.utxo.BlockHeaderHashRequest
+	(*BlockHeaderNumberRequest)(nil),  // 25: gavine.utxo.BlockHeaderNumberRequest
+	(*BlockHeaderResponse)(nil),       // 26: gavine.utxo.BlockHeaderResponse
+	(*SendTxRequest)(nil),             // 27: gavine.utxo.SendTxRequest
+	(*SendTxResponse)(nil),            // 28: gavine.utxo.SendTxResponse
+	(*TxAddressRequest)(nil),          // 29: gavine.utxo.TxAddressRequest
+	(*TxAddressResponse)(nil),         // 30: gavine.utxo.TxAddressResponse
+	(*TxHashRequest)(nil),             // 31: gavine.utxo.TxHashRequest
+	(*TxHashResponse)(nil),            // 32: gavine.utxo.TxHashResponse
+	(*UnSignTransactionRequest)(nil),  // 33: gavine.utxo.UnSignTransactionRequest
+	(*UnSignTransactionResponse)(nil), // 34: gavine.utxo.UnSignTransactionResponse
+	(*SignedTransactionRequest)(nil),  // 35: gavine.utxo.SignedTransactionRequest
+	(*SignedTransactionResponse)(nil), // 36: gavine.utxo.SignedTransactionResponse
+	(*VerifyTransactionRequest)(nil),  // 37: gavine.utxo.VerifyTransactionRequest
+	(*VerifyTransactionResponse)(nil), // 38: gavine.utxo.VerifyTransactionResponse
+	(*DecodeTransactionRequest)(nil),  // 39: gavine.utxo.DecodeTransactionRequest
+	(*DecodeTransactionResponse)(nil), // 40: gavine.utxo.DecodeTransactionResponse
+	(common.ReturnCode)(0),            // 41: gavine.ReturnCode
 }
-var file_dapplink_utxo_proto_depIdxs = []int32{
-	3,  // 0: dapplink.utxo.TxMessage.froms:type_name -> dapplink.utxo.Address
-	3,  // 1: dapplink.utxo.TxMessage.tos:type_name -> dapplink.utxo.Address
-	4,  // 2: dapplink.utxo.TxMessage.values:type_name -> dapplink.utxo.Value
-	0,  // 3: dapplink.utxo.TxMessage.status:type_name -> dapplink.utxo.TxStatus
-	41, // 4: dapplink.utxo.SupportChainsResponse.code:type_name -> dapplink.ReturnCode
-	41, // 5: dapplink.utxo.ConvertAddressResponse.code:type_name -> dapplink.ReturnCode
-	41, // 6: dapplink.utxo.ValidAddressResponse.code:type_name -> dapplink.ReturnCode
-	41, // 7: dapplink.utxo.FeeResponse.code:type_name -> dapplink.ReturnCode
-	13, // 8: dapplink.utxo.FeeResponse.hd_wallet:type_name -> dapplink.utxo.HdWallet
-	41, // 9: dapplink.utxo.AccountResponse.code:type_name -> dapplink.ReturnCode
-	41, // 10: dapplink.utxo.UnspentOutputsResponse.code:type_name -> dapplink.ReturnCode
-	17, // 11: dapplink.utxo.UnspentOutputsResponse.unspent_outputs:type_name -> dapplink.utxo.UnspentOutput
-	1,  // 12: dapplink.utxo.TransactionList.vin:type_name -> dapplink.utxo.Vin
-	2,  // 13: dapplink.utxo.TransactionList.vout:type_name -> dapplink.utxo.Vout
-	41, // 14: dapplink.utxo.BlockResponse.code:type_name -> dapplink.ReturnCode
-	22, // 15: dapplink.utxo.BlockResponse.tx_list:type_name -> dapplink.utxo.TransactionList
-	41, // 16: dapplink.utxo.BlockHeaderResponse.code:type_name -> dapplink.ReturnCode
-	41, // 17: dapplink.utxo.SendTxResponse.code:type_name -> dapplink.ReturnCode
-	41, // 18: dapplink.utxo.TxAddressResponse.code:type_name -> dapplink.ReturnCode
-	5,  // 19: dapplink.utxo.TxAddressResponse.tx:type_name -> dapplink.utxo.TxMessage
-	41, // 20: dapplink.utxo.TxHashResponse.code:type_name -> dapplink.ReturnCode
-	5,  // 21: dapplink.utxo.TxHashResponse.tx:type_name -> dapplink.utxo.TxMessage
-	1,  // 22: dapplink.utxo.UnSignTransactionRequest.vin:type_name -> dapplink.utxo.Vin
-	2,  // 23: dapplink.utxo.UnSignTransactionRequest.vout:type_name -> dapplink.utxo.Vout
-	41, // 24: dapplink.utxo.UnSignTransactionResponse.code:type_name -> dapplink.ReturnCode
-	41, // 25: dapplink.utxo.SignedTransactionResponse.code:type_name -> dapplink.ReturnCode
-	41, // 26: dapplink.utxo.VerifyTransactionResponse.code:type_name -> dapplink.ReturnCode
-	1,  // 27: dapplink.utxo.DecodeTransactionRequest.vins:type_name -> dapplink.utxo.Vin
-	41, // 28: dapplink.utxo.DecodeTransactionResponse.code:type_name -> dapplink.ReturnCode
-	0,  // 29: dapplink.utxo.DecodeTransactionResponse.status:type_name -> dapplink.utxo.TxStatus
-	1,  // 30: dapplink.utxo.DecodeTransactionResponse.vins:type_name -> dapplink.utxo.Vin
-	2,  // 31: dapplink.utxo.DecodeTransactionResponse.vouts:type_name -> dapplink.utxo.Vout
-	6,  // 32: dapplink.utxo.WalletUtxoService.getSupportChains:input_type -> dapplink.utxo.SupportChainsRequest
-	8,  // 33: dapplink.utxo.WalletUtxoService.convertAddress:input_type -> dapplink.utxo.ConvertAddressRequest
-	10, // 34: dapplink.utxo.WalletUtxoService.validAddress:input_type -> dapplink.utxo.ValidAddressRequest
-	12, // 35: dapplink.utxo.WalletUtxoService.getFee:input_type -> dapplink.utxo.FeeRequest
-	15, // 36: dapplink.utxo.WalletUtxoService.getAccount:input_type -> dapplink.utxo.AccountRequest
-	18, // 37: dapplink.utxo.WalletUtxoService.getUnspentOutputs:input_type -> dapplink.utxo.UnspentOutputsRequest
-	20, // 38: dapplink.utxo.WalletUtxoService.getBlockByNumber:input_type -> dapplink.utxo.BlockNumberRequest
-	21, // 39: dapplink.utxo.WalletUtxoService.getBlockByHash:input_type -> dapplink.utxo.BlockHashRequest
-	24, // 40: dapplink.utxo.WalletUtxoService.getBlockHeaderByHash:input_type -> dapplink.utxo.BlockHeaderHashRequest
-	25, // 41: dapplink.utxo.WalletUtxoService.getBlockHeaderByNumber:input_type -> dapplink.utxo.BlockHeaderNumberRequest
-	27, // 42: dapplink.utxo.WalletUtxoService.SendTx:input_type -> dapplink.utxo.SendTxRequest
-	29, // 43: dapplink.utxo.WalletUtxoService.getTxByAddress:input_type -> dapplink.utxo.TxAddressRequest
-	31, // 44: dapplink.utxo.WalletUtxoService.getTxByHash:input_type -> dapplink.utxo.TxHashRequest
-	33, // 45: dapplink.utxo.WalletUtxoService.createUnSignTransaction:input_type -> dapplink.utxo.UnSignTransactionRequest
-	35, // 46: dapplink.utxo.WalletUtxoService.buildSignedTransaction:input_type -> dapplink.utxo.SignedTransactionRequest
-	39, // 47: dapplink.utxo.WalletUtxoService.decodeTransaction:input_type -> dapplink.utxo.DecodeTransactionRequest
-	37, // 48: dapplink.utxo.WalletUtxoService.verifySignedTransaction:input_type -> dapplink.utxo.VerifyTransactionRequest
-	7,  // 49: dapplink.utxo.WalletUtxoService.getSupportChains:output_type -> dapplink.utxo.SupportChainsResponse
-	9,  // 50: dapplink.utxo.WalletUtxoService.convertAddress:output_type -> dapplink.utxo.ConvertAddressResponse
-	11, // 51: dapplink.utxo.WalletUtxoService.validAddress:output_type -> dapplink.utxo.ValidAddressResponse
-	14, // 52: dapplink.utxo.WalletUtxoService.getFee:output_type -> dapplink.utxo.FeeResponse
-	16, // 53: dapplink.utxo.WalletUtxoService.getAccount:output_type -> dapplink.utxo.AccountResponse
-	19, // 54: dapplink.utxo.WalletUtxoService.getUnspentOutputs:output_type -> dapplink.utxo.UnspentOutputsResponse
-	23, // 55: dapplink.utxo.WalletUtxoService.getBlockByNumber:output_type -> dapplink.utxo.BlockResponse
-	23, // 56: dapplink.utxo.WalletUtxoService.getBlockByHash:output_type -> dapplink.utxo.BlockResponse
-	26, // 57: dapplink.utxo.WalletUtxoService.getBlockHeaderByHash:output_type -> dapplink.utxo.BlockHeaderResponse
-	26, // 58: dapplink.utxo.WalletUtxoService.getBlockHeaderByNumber:output_type -> dapplink.utxo.BlockHeaderResponse
-	28, // 59: dapplink.utxo.WalletUtxoService.SendTx:output_type -> dapplink.utxo.SendTxResponse
-	30, // 60: dapplink.utxo.WalletUtxoService.getTxByAddress:output_type -> dapplink.utxo.TxAddressResponse
-	32, // 61: dapplink.utxo.WalletUtxoService.getTxByHash:output_type -> dapplink.utxo.TxHashResponse
-	34, // 62: dapplink.utxo.WalletUtxoService.createUnSignTransaction:output_type -> dapplink.utxo.UnSignTransactionResponse
-	36, // 63: dapplink.utxo.WalletUtxoService.buildSignedTransaction:output_type -> dapplink.utxo.SignedTransactionResponse
-	40, // 64: dapplink.utxo.WalletUtxoService.decodeTransaction:output_type -> dapplink.utxo.DecodeTransactionResponse
-	38, // 65: dapplink.utxo.WalletUtxoService.verifySignedTransaction:output_type -> dapplink.utxo.VerifyTransactionResponse
+var file_gavine_utxo_proto_depIdxs = []int32{
+	3,  // 0: gavine.utxo.TxMessage.froms:type_name -> gavine.utxo.Address
+	3,  // 1: gavine.utxo.TxMessage.tos:type_name -> gavine.utxo.Address
+	4,  // 2: gavine.utxo.TxMessage.values:type_name -> gavine.utxo.Value
+	0,  // 3: gavine.utxo.TxMessage.status:type_name -> gavine.utxo.TxStatus
+	41, // 4: gavine.utxo.SupportChainsResponse.code:type_name -> gavine.ReturnCode
+	41, // 5: gavine.utxo.ConvertAddressResponse.code:type_name -> gavine.ReturnCode
+	41, // 6: gavine.utxo.ValidAddressResponse.code:type_name -> gavine.ReturnCode
+	41, // 7: gavine.utxo.FeeResponse.code:type_name -> gavine.ReturnCode
+	13, // 8: gavine.utxo.FeeResponse.hd_wallet:type_name -> gavine.utxo.HdWallet
+	41, // 9: gavine.utxo.AccountResponse.code:type_name -> gavine.ReturnCode
+	41, // 10: gavine.utxo.UnspentOutputsResponse.code:type_name -> gavine.ReturnCode
+	17, // 11: gavine.utxo.UnspentOutputsResponse.unspent_outputs:type_name -> gavine.utxo.UnspentOutput
+	1,  // 12: gavine.utxo.TransactionList.vin:type_name -> gavine.utxo.Vin
+	2,  // 13: gavine.utxo.TransactionList.vout:type_name -> gavine.utxo.Vout
+	41, // 14: gavine.utxo.BlockResponse.code:type_name -> gavine.ReturnCode
+	22, // 15: gavine.utxo.BlockResponse.tx_list:type_name -> gavine.utxo.TransactionList
+	41, // 16: gavine.utxo.BlockHeaderResponse.code:type_name -> gavine.ReturnCode
+	41, // 17: gavine.utxo.SendTxResponse.code:type_name -> gavine.ReturnCode
+	41, // 18: gavine.utxo.TxAddressResponse.code:type_name -> gavine.ReturnCode
+	5,  // 19: gavine.utxo.TxAddressResponse.tx:type_name -> gavine.utxo.TxMessage
+	41, // 20: gavine.utxo.TxHashResponse.code:type_name -> gavine.ReturnCode
+	5,  // 21: gavine.utxo.TxHashResponse.tx:type_name -> gavine.utxo.TxMessage
+	1,  // 22: gavine.utxo.UnSignTransactionRequest.vin:type_name -> gavine.utxo.Vin
+	2,  // 23: gavine.utxo.UnSignTransactionRequest.vout:type_name -> gavine.utxo.Vout
+	41, // 24: gavine.utxo.UnSignTransactionResponse.code:type_name -> gavine.ReturnCode
+	41, // 25: gavine.utxo.SignedTransactionResponse.code:type_name -> gavine.ReturnCode
+	41, // 26: gavine.utxo.VerifyTransactionResponse.code:type_name -> gavine.ReturnCode
+	1,  // 27: gavine.utxo.DecodeTransactionRequest.vins:type_name -> gavine.utxo.Vin
+	41, // 28: gavine.utxo.DecodeTransactionResponse.code:type_name -> gavine.ReturnCode
+	0,  // 29: gavine.utxo.DecodeTransactionResponse.status:type_name -> gavine.utxo.TxStatus
+	1,  // 30: gavine.utxo.DecodeTransactionResponse.vins:type_name -> gavine.utxo.Vin
+	2,  // 31: gavine.utxo.DecodeTransactionResponse.vouts:type_name -> gavine.utxo.Vout
+	6,  // 32: gavine.utxo.WalletUtxoService.getSupportChains:input_type -> gavine.utxo.SupportChainsRequest
+	8,  // 33: gavine.utxo.WalletUtxoService.convertAddress:input_type -> gavine.utxo.ConvertAddressRequest
+	10, // 34: gavine.utxo.WalletUtxoService.validAddress:input_type -> gavine.utxo.ValidAddressRequest
+	12, // 35: gavine.utxo.WalletUtxoService.getFee:input_type -> gavine.utxo.FeeRequest
+	15, // 36: gavine.utxo.WalletUtxoService.getAccount:input_type -> gavine.utxo.AccountRequest
+	18, // 37: gavine.utxo.WalletUtxoService.getUnspentOutputs:input_type -> gavine.utxo.UnspentOutputsRequest
+	20, // 38: gavine.utxo.WalletUtxoService.getBlockByNumber:input_type -> gavine.utxo.BlockNumberRequest
+	21, // 39: gavine.utxo.WalletUtxoService.getBlockByHash:input_type -> gavine.utxo.BlockHashRequest
+	24, // 40: gavine.utxo.WalletUtxoService.getBlockHeaderByHash:input_type -> gavine.utxo.BlockHeaderHashRequest
+	25, // 41: gavine.utxo.WalletUtxoService.getBlockHeaderByNumber:input_type -> gavine.utxo.BlockHeaderNumberRequest
+	27, // 42: gavine.utxo.WalletUtxoService.SendTx:input_type -> gavine.utxo.SendTxRequest
+	29, // 43: gavine.utxo.WalletUtxoService.getTxByAddress:input_type -> gavine.utxo.TxAddressRequest
+	31, // 44: gavine.utxo.WalletUtxoService.getTxByHash:input_type -> gavine.utxo.TxHashRequest
+	33, // 45: gavine.utxo.WalletUtxoService.createUnSignTransaction:input_type -> gavine.utxo.UnSignTransactionRequest
+	35, // 46: gavine.utxo.WalletUtxoService.buildSignedTransaction:input_type -> gavine.utxo.SignedTransactionRequest
+	39, // 47: gavine.utxo.WalletUtxoService.decodeTransaction:input_type -> gavine.utxo.DecodeTransactionRequest
+	37, // 48: gavine.utxo.WalletUtxoService.verifySignedTransaction:input_type -> gavine.utxo.VerifyTransactionRequest
+	7,  // 49: gavine.utxo.WalletUtxoService.getSupportChains:output_type -> gavine.utxo.SupportChainsResponse
+	9,  // 50: gavine.utxo.WalletUtxoService.convertAddress:output_type -> gavine.utxo.ConvertAddressResponse
+	11, // 51: gavine.utxo.WalletUtxoService.validAddress:output_type -> gavine.utxo.ValidAddressResponse
+	14, // 52: gavine.utxo.WalletUtxoService.getFee:output_type -> gavine.utxo.FeeResponse
+	16, // 53: gavine.utxo.WalletUtxoService.getAccount:output_type -> gavine.utxo.AccountResponse
+	19, // 54: gavine.utxo.WalletUtxoService.getUnspentOutputs:output_type -> gavine.utxo.UnspentOutputsResponse
+	23, // 55: gavine.utxo.WalletUtxoService.getBlockByNumber:output_type -> gavine.utxo.BlockResponse
+	23, // 56: gavine.utxo.WalletUtxoService.getBlockByHash:output_type -> gavine.utxo.BlockResponse
+	26, // 57: gavine.utxo.WalletUtxoService.getBlockHeaderByHash:output_type -> gavine.utxo.BlockHeaderResponse
+	26, // 58: gavine.utxo.WalletUtxoService.getBlockHeaderByNumber:output_type -> gavine.utxo.BlockHeaderResponse
+	28, // 59: gavine.utxo.WalletUtxoService.SendTx:output_type -> gavine.utxo.SendTxResponse
+	30, // 60: gavine.utxo.WalletUtxoService.getTxByAddress:output_type -> gavine.utxo.TxAddressResponse
+	32, // 61: gavine.utxo.WalletUtxoService.getTxByHash:output_type -> gavine.utxo.TxHashResponse
+	34, // 62: gavine.utxo.WalletUtxoService.createUnSignTransaction:output_type -> gavine.utxo.UnSignTransactionResponse
+	36, // 63: gavine.utxo.WalletUtxoService.buildSignedTransaction:output_type -> gavine.utxo.SignedTransactionResponse
+	40, // 64: gavine.utxo.WalletUtxoService.decodeTransaction:output_type -> gavine.utxo.DecodeTransactionResponse
+	38, // 65: gavine.utxo.WalletUtxoService.verifySignedTransaction:output_type -> gavine.utxo.VerifyTransactionResponse
 	49, // [49:66] is the sub-list for method output_type
 	32, // [32:49] is the sub-list for method input_type
 	32, // [32:32] is the sub-list for extension type_name
@@ -3355,27 +3355,27 @@ var file_dapplink_utxo_proto_depIdxs = []int32{
 	0,  // [0:32] is the sub-list for field type_name
 }
 
-func init() { file_dapplink_utxo_proto_init() }
-func file_dapplink_utxo_proto_init() {
-	if File_dapplink_utxo_proto != nil {
+func init() { file_gavine_utxo_proto_init() }
+func file_gavine_utxo_proto_init() {
+	if File_gavine_utxo_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dapplink_utxo_proto_rawDesc), len(file_dapplink_utxo_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_gavine_utxo_proto_rawDesc), len(file_gavine_utxo_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   40,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_dapplink_utxo_proto_goTypes,
-		DependencyIndexes: file_dapplink_utxo_proto_depIdxs,
-		EnumInfos:         file_dapplink_utxo_proto_enumTypes,
-		MessageInfos:      file_dapplink_utxo_proto_msgTypes,
+		GoTypes:           file_gavine_utxo_proto_goTypes,
+		DependencyIndexes: file_gavine_utxo_proto_depIdxs,
+		EnumInfos:         file_gavine_utxo_proto_enumTypes,
+		MessageInfos:      file_gavine_utxo_proto_msgTypes,
 	}.Build()
-	File_dapplink_utxo_proto = out.File
-	file_dapplink_utxo_proto_goTypes = nil
-	file_dapplink_utxo_proto_depIdxs = nil
+	File_gavine_utxo_proto = out.File
+	file_gavine_utxo_proto_goTypes = nil
+	file_gavine_utxo_proto_depIdxs = nil
 }
