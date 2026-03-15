@@ -112,7 +112,7 @@ fork chain-explorer-api to your github
 ### 2.clone repo
 
 ```bash
-git@github.com:guoshijiang/chain-explorer-api.git
+git@github.com:gavine/chain-explorer-api.git
 ```
 
 ### 3. create new branch and commit code

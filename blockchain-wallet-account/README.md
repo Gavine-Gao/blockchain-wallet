@@ -54,7 +54,7 @@ fork blockchain-wallet-account to your github
 ### 2.clone repo
 
 ```bash
-git@github.com:guoshijiang/blockchain-wallet-account.git
+git@github.com:gavine/blockchain-wallet-account.git
 ```
 
 ### 3. create new branch and commit code

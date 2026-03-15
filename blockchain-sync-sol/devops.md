@@ -30,7 +30,7 @@ source .env
 
 - 命令行参数
 ```
-guoshijiang@guoshijiangdeMacBook-Pro wallet-sign-go % ./signature
+gavine@gavinedeMacBook-Pro wallet-sign-go % ./signature
 NAME:
    signature - A new cli application
 
@@ -181,12 +181,12 @@ export WALLET_SLAVE_DB_ENABLE=false
 export WALLET_API_CACHE_ENABLE=false
 export WALLET_MASTER_DB_HOST="127.0.0.1"
 export WALLET_MASTER_DB_PORT=5432
-export WALLET_MASTER_DB_USER="guoshijiang"
+export WALLET_MASTER_DB_USER="gavine"
 export WALLET_MASTER_DB_PASSWORD=""
 export WALLET_MASTER_DB_NAME="multichain"
 export WALLET_SLAVE_DB_HOST="127.0.0.1"
 export WALLET_SLAVE_DB_PORT=5432
-export WALLET_SLAVE_DB_USER="guoshijiang"
+export WALLET_SLAVE_DB_USER="gavine"
 export WALLET_SLAVE_DB_PASSWORD=""
 export WALLET_SLAVE_DB_NAME="multichain"
 export WALLET_API_CACHE_LIST_SIZE=100000

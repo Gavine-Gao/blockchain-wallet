@@ -54,7 +54,7 @@ fork blockchain-wallet-utxo to your github
 ### 2.clone repo
 
 ```bash
-git@github.com:guoshijiang/blockchain-wallet-utxo.git
+git@github.com:gavine/blockchain-wallet-utxo.git
 ```
 
 ### 3. create new branch and commit code
