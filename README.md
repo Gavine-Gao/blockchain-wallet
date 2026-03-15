@@ -1,241 +1,234 @@
 # Blockchain Wallet
 
-[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go)](https://go.dev/)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev/)
+[![gRPC](https://img.shields.io/badge/gRPC-Protocol_Buffers-244C5A?style=for-the-badge&logo=google&logoColor=white)](https://grpc.io/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-多链区块链钱包基础设施，支持 **18+ 条公链**，涵盖 Account 模型（ETH/SOL/TRON 等）和 UTXO 模型（BTC/LTC/DASH 等）。
+A production-grade, multi-chain blockchain wallet infrastructure supporting **18+ blockchains** across both Account-based (ETH, SOL, TRON, etc.) and UTXO-based (BTC, LTC, DASH, etc.) models. Built with Go, designed for high throughput and horizontal scalability.
 
-## 📦 项目结构
+---
 
-```
-blockchain-wallet/
-├── blockchain-proto              # Protocol Buffer 定义（gRPC 接口规范）
-├── blockchain-wallet-account     # Account 模型链节点服务
-├── blockchain-wallet-utxo        # UTXO 模型链节点服务
-├── blockchain-sync-sol           # Solana 链上数据同步服务
-├── blockchain-sync-account       # Account 模型链同步服务
-├── blockchain-sync-btc           # BTC UTXO 同步服务
-└── chain-explorer-api            # 链浏览器 API 封装（Etherscan/SolScan/OKLink）
-```
+## Architecture Overview
 
-## 🏗️ 系统架构
+The system is composed of **7 independent microservices** organized into four layers:
 
-系统由 **7 个独立微服务** 组成，分为四层：
+| Layer | Service | Responsibility |
+|:------|:--------|:---------------|
+| **Protocol** | `blockchain-proto` | Protobuf definitions for Account & UTXO gRPC service interfaces |
+| **Wallet** | `blockchain-wallet-account` | Multi-chain node abstraction for 18 Account-model chains |
+| | `blockchain-wallet-utxo` | Node abstraction for UTXO-model chains (BTC, LTC, etc.) |
+| **Sync** | `blockchain-sync-sol` | Real-time Solana on-chain data synchronization |
+| | `blockchain-sync-account` | EVM-compatible chain synchronization |
+| | `blockchain-sync-btc` | Bitcoin UTXO synchronization |
+| **Data** | `chain-explorer-api` | Unified wrapper for Etherscan / SolScan / OKLink APIs |
 
-| 层级 | 项目 | 职责 |
-|:-----|:-----|:-----|
-| **协议层** | `blockchain-proto` | Protobuf 定义，Account/UTXO 两套 gRPC 服务接口 |
-| **钱包层** | `blockchain-wallet-account` | Account 模型多链钱包，支持 18 条链 |
-| | `blockchain-wallet-utxo` | UTXO 模型钱包，支持 BTC/LTC/DASH 等 |
-| **同步层** | `blockchain-sync-sol` | Solana 链交易同步 |
-| | `blockchain-sync-account` | EVM 兼容链交易同步 |
-| | `blockchain-sync-btc` | BTC 链交易同步 |
-| **数据层** | `chain-explorer-api` | Etherscan/SolScan/OKLink 浏览器 API 统一封装 |
-
-### 整体数据流
+### Data Flow
 
 ```
-                    ┌─────────────────────────────┐
-                    │       业务层（钱包 API）       │
-                    └──────────────┬──────────────┘
-                                   │ gRPC
-          ┌────────────────────────┼────────────────────────┐
-          ▼                        ▼                        ▼
-┌─────────────────┐   ┌──────────────────┐   ┌──────────────────┐
-│ sync-account    │   │ sync-sol         │   │ sync-btc         │
-│ EVM 链同步       │   │ Solana 链同步     │   │ BTC 链同步        │
-│ ChannelBank     │   │ ChannelBank      │   │ ChannelBank      │
-│ AddressCache    │   │ AddressCache     │   │ AddressCache     │
-└────────┬────────┘   └────────┬─────────┘   └────────┬─────────┘
-         │ gRPC                │ gRPC                  │ gRPC
-         ▼                     ▼                       ▼
-┌──────────────────────────────────┐   ┌────────────────────────┐
-│    blockchain-wallet-account     │   │ blockchain-wallet-utxo │
-│    ChainDispatcher (18 条链)      │   │ ChainDispatcher (BTC)  │
-│    ┌─────┬─────┬─────┬────┐     │   │ ┌─────┬─────┬────┐    │
-│    │ ETH │ SOL │TRON │ .. │     │   │ │ BTC │ LTC │DASH│    │
-│    └──┬──┴──┬──┴──┬──┴──┬─┘     │   │ └──┬──┴──┬──┴──┬─┘    │
-└───────┼─────┼─────┼─────┼───────┘   └────┼─────┼─────┼──────┘
-        │     │     │     │                 │     │     │
-        ▼     ▼     ▼     ▼                 ▼     ▼     ▼
-   ┌──────────────────────────────────────────────────────────┐
-   │            第三方节点 / 自建节点                            │
-   │     Alchemy · Helius · QuickNode · GetBlock · Ankr       │
-   └──────────────────────────────────────────────────────────┘
+                      ┌─────────────────────────────────┐
+                      │       Application Layer          │
+                      │       (Wallet API / DApp)        │
+                      └──────────────┬──────────────────┘
+                                     │ gRPC
+            ┌────────────────────────┼──────────────────────────┐
+            ▼                        ▼                          ▼
+  ┌──────────────────┐   ┌────────────────────┐   ┌──────────────────┐
+  │  sync-account    │   │  sync-sol          │   │  sync-btc        │
+  │  EVM Chain Sync  │   │  Solana Sync       │   │  Bitcoin Sync    │
+  │  ChannelBank     │   │  ChannelBank       │   │  ChannelBank     │
+  │  AddressCache    │   │  AddressCache      │   │  AddressCache    │
+  └────────┬─────────┘   └────────┬───────────┘   └────────┬─────────┘
+           │ gRPC                 │ gRPC                    │ gRPC
+           ▼                      ▼                         ▼
+  ┌────────────────────────────────────┐   ┌─────────────────────────┐
+  │    blockchain-wallet-account       │   │ blockchain-wallet-utxo  │
+  │    ChainDispatcher (18 chains)     │   │ ChainDispatcher (UTXO)  │
+  │    ┌─────┬─────┬──────┬────┐      │   │ ┌─────┬─────┬─────┐    │
+  │    │ ETH │ SOL │ TRON │ .. │      │   │ │ BTC │ LTC │DASH │    │
+  │    └──┬──┴──┬──┴──┬───┴──┬─┘      │   │ └──┬──┴──┬──┴──┬──┘    │
+  └───────┼─────┼─────┼──────┼────────┘   └────┼─────┼─────┼───────┘
+          │     │     │      │                  │     │     │
+          ▼     ▼     ▼      ▼                  ▼     ▼     ▼
+    ┌────────────────────────────────────────────────────────────────┐
+    │                  RPC Providers / Self-hosted Nodes             │
+    │          Alchemy · Helius · QuickNode · GetBlock · Ankr       │
+    └────────────────────────────────────────────────────────────────┘
 ```
 
-## 🧩 核心设计模式
+## Core Design Patterns
 
-### 1. ChainDispatcher — 多链适配器
+### 1. ChainDispatcher — Strategy-based Multi-chain Routing
 
-所有链通过统一的 `IChainAdaptor` 接口接入，新增链只需实现接口 + 注册工厂：
-
-```
-gRPC 请求 → ChainDispatcher → registry[chainName] → 对应链的 Adaptor
-                                    ├── Ethereum Adaptor
-                                    ├── Solana Adaptor
-                                    ├── Tron Adaptor
-                                    └── ... 18 条链
-```
-
-### 2. Worker 模式 — 四类交易处理
+All chains implement a unified `IChainAdaptor` interface. The dispatcher routes incoming gRPC requests to the appropriate chain adaptor at runtime. Adding a new chain requires only implementing the interface and registering it — zero changes to the routing layer.
 
 ```
-BaseSynchronizer ──→ ChannelBank ──→ Deposit Worker (充值处理)
-   (区块扫描)        (流式排序)   ──→ Withdraw Worker (提现确认)
-                                 ──→ Internal Worker (归集/冷热)
-                                 ──→ FallBack Worker (失败重试)
+gRPC Request → ChainDispatcher → registry[chainName] → Chain Adaptor
+                                       ├── Ethereum Adaptor
+                                       ├── Solana Adaptor
+                                       ├── Tron Adaptor
+                                       └── ... (18 chains)
 ```
 
-交易类型自动判定：**充值** / **提现** / **归集** / **热转冷** / **冷转热**。
+### 2. Worker Pipeline — Transaction Classification Engine
 
-### 3. ChannelBank — 并发扫块 + 有序消费
-
-```
-多个 goroutine 并发拉取区块（乱序）
-              │
-              ▼
-      ┌───────────────┐
-      │  ChannelBank  │
-      │ MinHeap 排序   │  ← 收到即排序
-      │ nextExpected  │  ← 严格保证顺序
-      └───────┬───────┘
-              │ 有序输出
-              ▼
-      按区块号顺序消费
-```
-
-灵感来源于 Mantle 的 derivation pipeline，用最小堆实现流式排序。
-
-### 4. AddressCache — 双层地址过滤
+Transactions are automatically classified into five categories and dispatched to specialized workers:
 
 ```
-交易地址 → Bloom Filter (O(1), ~12MB/千万地址)
-              │
-              ├── 一定不存在 → 跳过（大部分交易在这里过滤）
-              └── 可能存在 → Map 精确匹配
-                               │
-                               ├── 不存在 → 误报，跳过
-                               └── 存在 → 获取 BusinessId + AddressType
+BaseSynchronizer ──→ ChannelBank ──→ Deposit Worker   (incoming transfers)
+   (block scanner)   (ordered)   ──→ Withdraw Worker  (outgoing transfers)
+                                 ──→ Internal Worker  (hot/cold wallet mgmt)
+                                 ──→ FallBack Worker  (failure recovery)
 ```
 
-布隆过滤器 100M bits / 3 hash，千万级地址仅 ~12MB 内存，避免每笔交易查 DB。
+Transaction types: **Deposit** · **Withdrawal** · **Aggregation** · **Hot-to-Cold** · **Cold-to-Hot**
 
-## ⛓️ 支持链
+### 3. ChannelBank — Concurrent Scanning with Ordered Consumption
 
-### Account 模型（blockchain-wallet-account）
+Inspired by [Mantle's derivation pipeline](https://github.com/mantlenetworkio/mantle), ChannelBank uses a **min-heap** to enable concurrent block fetching while guaranteeing strictly ordered output:
 
-| 链 | 状态 | 链 | 状态 |
-|:---|:---:|:---|:---:|
+```
+Multiple goroutines fetch blocks concurrently (unordered)
+                    │
+                    ▼
+            ┌───────────────┐
+            │  ChannelBank  │
+            │  MinHeap Sort │  ← Sort on arrival
+            │ nextExpected  │  ← Strict sequential guarantee
+            └───────┬───────┘
+                    │ Ordered output
+                    ▼
+          Consumed in block-number order
+```
+
+### 4. AddressCache — Two-layer Probabilistic Filtering
+
+A high-performance address lookup mechanism combining a Bloom filter (~12MB for 10M addresses) with an exact-match hash map. This eliminates database queries for the vast majority of transactions:
+
+```
+Tx Address → Bloom Filter (O(1), ~12MB / 10M addresses)
+                 │
+                 ├── Definitely absent → Skip (majority filtered here)
+                 └── Possibly present → Exact HashMap lookup
+                                           │
+                                           ├── Not found → False positive, skip
+                                           └── Found → Return BusinessId + AddressType
+```
+
+## Supported Chains
+
+### Account Model (blockchain-wallet-account)
+
+| Chain | Status | Chain | Status |
+|:------|:------:|:------|:------:|
 | Ethereum | ✅ | Arbitrum | ✅ |
 | Solana | ✅ | Optimism | ✅ |
 | Tron | ✅ | Linea | ✅ |
 | BSC | ✅ | Scroll | ✅ |
-| Polygon | ✅ | zkSync | ✅ |
+| Polygon | ✅ | zkSync Era | ✅ |
 | Mantle | ✅ | BTT | ✅ |
 | Aptos | ✅ | Sui | ✅ |
 | Cosmos | ✅ | TON | ✅ |
 | Stellar (XLM) | ✅ | ICP | ✅ |
 
-### UTXO 模型（blockchain-wallet-utxo）
+### UTXO Model (blockchain-wallet-utxo)
 
-| 链 | 状态 | 链 | 状态 |
-|:---|:---:|:---|:---:|
+| Chain | Status | Chain | Status |
+|:------|:------:|:------|:------:|
 | Bitcoin | ✅ | Bitcoin Cash | ✅ |
 | Litecoin | ✅ | Horizen (ZEN) | ✅ |
 | Dash | ✅ | | |
 
-## 🚀 快速开始
+## Getting Started
 
-### 前置依赖
+### Prerequisites
 
 - Go 1.22+
 - MySQL 8.0+
-- Protocol Buffers 编译器（protoc）
+- Protocol Buffers compiler (`protoc`)
 
-### 启动节点服务
+### Run Wallet Node Service
 
 ```bash
-# Account 模型链
+# Account-model chains
 cd blockchain-wallet-account
-cp config.yml.example config.yml  # 修改 RPC 节点配置
+cp config.yml.example config.yml   # Configure RPC endpoints
 go run main.go
 
-# UTXO 模型链
+# UTXO-model chains
 cd blockchain-wallet-utxo
 cp config.yml.example config.yml
 go run main.go
 ```
 
-### 启动同步服务
+### Run Sync Service
 
 ```bash
-# Solana 同步
+# Solana sync
 cd blockchain-sync-sol
 go run cmd/multichain-sync/main.go \
   --chain-name=Solana \
   --rpc-url=http://localhost:8189 \
   --starting-height=0
 
-# Account 模型链同步
+# EVM chain sync
 cd blockchain-sync-account
 go run cmd/multichain-sync/main.go \
   --chain-name=Ethereum \
   --rpc-url=http://localhost:8189
 ```
 
-## 🔧 核心功能
+## Key Features
 
-| 功能 | 说明 |
-|:-----|:-----|
-| **统一 gRPC 接口** | 所有链通过相同的 protobuf 接口调用，业务层无需关心链差异 |
-| **实时扫块同步** | 支持 finalized 确认、自动重组检测（reorg） |
-| **交易构建与签名** | 支持未签名交易构建、签名验证、广播 |
-| **地址管理** | 地址生成、验证、格式转换 |
-| **费用估算** | 支持慢/正常/快三档费用估算，Solana 支持优先费 |
-| **浏览器 API 集成** | Etherscan、SolScan、OKLink 统一封装 |
-| **Prometheus 监控** | 同步延迟、RPC 调用、地址缓存命中率 |
-| **优雅关闭** | 并行关闭 worker + 超时控制 |
+| Feature | Description |
+|:--------|:------------|
+| **Unified gRPC Interface** | All chains accessed through a single protobuf-defined API |
+| **Real-time Block Scanning** | Finalized confirmation support with automatic reorg detection |
+| **Transaction Builder** | Unsigned transaction construction, signature verification, broadcasting |
+| **Address Management** | Generation, validation, and cross-format conversion |
+| **Fee Estimation** | Three-tier fee estimation (slow/normal/fast), Solana priority fee support |
+| **Explorer API Integration** | Etherscan, SolScan, OKLink unified under a single interface |
+| **Prometheus Metrics** | Sync latency, RPC call stats, cache hit rates |
+| **Graceful Shutdown** | Parallel worker shutdown with configurable timeout |
 
-## 📁 各子项目说明
+## Project Details
 
 <details>
-<summary><b>blockchain-proto</b> — gRPC 接口定义</summary>
+<summary><b>blockchain-proto</b> — Protocol Definitions</summary>
 
-定义了两套 gRPC 服务接口：
-- `WalletAccountService` — Account 模型链接口（转账/余额/区块/交易查询等）
-- `WalletUtxoService` — UTXO 模型链接口（UTXO 查询/交易构建等）
+Defines two gRPC service contracts:
+- `WalletAccountService` — Account-model chain interface (transfers, balances, blocks, transactions)
+- `WalletUtxoService` — UTXO-model chain interface (UTXO queries, transaction construction)
 </details>
 
 <details>
-<summary><b>blockchain-wallet-account</b> — Account 链节点服务</summary>
+<summary><b>blockchain-wallet-account</b> — Account Chain Node Service</summary>
 
-通过 `ChainDispatcher` 将 gRPC 请求路由到 18 条链的适配器。每条链实现 `IChainAdaptor` 接口：
-- `GetBlockByNumber` / `GetBlockByHash` — 区块查询
-- `GetTxByHash` / `GetTxByAddress` — 交易查询
-- `GetAccount` / `GetBalance` — 账户余额
-- `BuildUnSignTransaction` / `SendTx` — 交易构建发送
+Routes gRPC requests via `ChainDispatcher` to 18 chain adaptors, each implementing `IChainAdaptor`:
+- `GetBlockByNumber` / `GetBlockByHash` — Block queries
+- `GetTxByHash` / `GetTxByAddress` — Transaction queries
+- `GetAccount` / `GetBalance` — Account & balance lookups
+- `BuildUnSignTransaction` / `SendTx` — Transaction construction & broadcast
 </details>
 
 <details>
-<summary><b>blockchain-sync-sol</b> — Solana 同步服务</summary>
+<summary><b>blockchain-sync-sol</b> — Solana Sync Engine</summary>
 
-核心组件：
-- `BaseSynchronizer` — 区块扫描引擎（并发拉取 + ChannelBank 有序消费）
-- `AddressCache` — 布隆过滤器 + Map 双层地址过滤
-- `Deposit/Withdraw/Internal/FallBack` — 四类交易 Worker
-- `Notifier` — 交易通知回调（支持 fallback 重试）
+Core components:
+- **BaseSynchronizer** — Concurrent block scanner with ChannelBank-based ordered consumption
+- **AddressCache** — Bloom filter + HashMap two-layer address filtering
+- **Workers** — Deposit / Withdraw / Internal / FallBack transaction processors
+- **Notifier** — Webhook-based transaction notification with fallback retry
 </details>
 
 <details>
-<summary><b>chain-explorer-api</b> — 链浏览器 API</summary>
+<summary><b>chain-explorer-api</b> — Block Explorer API Abstraction</summary>
 
-统一封装多个区块链浏览器 API：
-- Etherscan — ETH/EVM 链交易、账户、Gas 查询
-- SolScan — Solana 交易、代币、账户查询
-- OKLink — 多链交易、UTXO 查询
+Unified wrapper over multiple blockchain explorer APIs:
+- **Etherscan** — ETH/EVM chain transactions, accounts, gas estimation
+- **SolScan** — Solana transactions, tokens, account data
+- **OKLink** — Multi-chain transactions, UTXO queries
 </details>
 
-## 📄 License
+## License
 
-[MIT](LICENSE)
+This project is licensed under the [MIT License](LICENSE).
