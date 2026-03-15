@@ -4,7 +4,7 @@
 [![gRPC](https://img.shields.io/badge/gRPC-Protocol_Buffers-244C5A?style=for-the-badge&logo=google&logoColor=white)](https://grpc.io/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-A production-grade, multi-chain blockchain wallet infrastructure supporting **18+ blockchains** across both Account-based (ETH, SOL, TRON, etc.) and UTXO-based (BTC, LTC, DASH, etc.) models. Built with Go, designed for high throughput and horizontal scalability.
+A production-grade, multi-chain blockchain wallet infrastructure currently supporting **23+ blockchains** across both Account-based (ETH, SOL, TRON, etc.) and UTXO-based (BTC, LTC, DASH, etc.) models — with a roadmap to **100+ chains**. Built with Go, designed for high throughput and horizontal scalability.
 
 ---
 
@@ -228,6 +228,16 @@ Unified wrapper over multiple blockchain explorer APIs:
 - **SolScan** — Solana transactions, tokens, account data
 - **OKLink** — Multi-chain transactions, UTXO queries
 </details>
+
+## Roadmap
+
+- [ ] **100+ Chain Support** — Expand coverage to include Avalanche, Fantom, Near, Polkadot, Cardano, and more
+- [ ] **Multi-node Load Balancing** — Automatic failover and round-robin across multiple RPC providers
+- [ ] **WebSocket Subscriptions** — Real-time event streaming to replace HTTP polling
+- [ ] **Batch JSON-RPC** — Request batching to reduce API call volume
+- [ ] **Built-in Rate Limiter** — Adaptive backoff for third-party RPC rate limits (429)
+- [ ] **Shared Sync SDK** — Extract common sync logic into a reusable library
+- [ ] **OpenTelemetry Tracing** — Distributed tracing across all microservices
 
 ## License
 
