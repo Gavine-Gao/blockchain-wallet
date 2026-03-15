@@ -7,7 +7,7 @@ image:
   tag: ""
 
 imagePullSecrets:
-  - name: gavine-secret
+  - name: gavine-sercret
 nameOverride: ""
 fullnameOverride: ""
 
