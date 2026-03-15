@@ -4,7 +4,7 @@
 grpcurl -plaintext -d '{
   "chain": "Ton",
   "network": ""
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -24,7 +24,7 @@ grpcurl -plaintext -d '{
   "network": "mainnet",
   "address": "UQAmR3oackYYWKyLCXMPktBt6i1YdgqjvEB1h-z_4fxIdMxh",
   "rawTx": "te6cckEBAgEAsQAB34gBZxgy0BTErESwihTr71KC90UqEBEH/jYfv8jC0d5UK9IAwvpgFQ1g48Pa/ufkFQhxd1Em3Huto1ZjG1f/4DmajMCAvHCRDoTZG+muS6a2eyakWR8G3+SkHKRVgPQ7FEegYU1NGLs5YKa4E5ZuKBwBAHhCAEgEWnejouwnkZpdjD+P5IWAj3d3f75SIUyVS3V5htS9IdzWUAAAAAAAAAAAAAAAAAAAAAAAAG1lbW8ILCE7"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 ```
@@ -45,7 +45,7 @@ grpcurl -plaintext -d '{
   "coin": "Ton",
   "network": "mainnet",
   "address": "UQBX63RAdgShn34EAFMV73Cut7Z15lUZd1hnVva68SEl7pGn"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 
 - response
@@ -72,7 +72,7 @@ grpcurl -plaintext -d '{
   "contractAddress": "0x00",
   "page": 1,
   "pagesize": 10
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 
 - response
@@ -120,7 +120,7 @@ grpcurl -plaintext -d '{
   "coin": "Ton",
   "network": "mainet",
   "hash": "c5hQxGQPrAMzj38xr/lyx4n09eb1V/l4eeYxHjqjSjI="
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 
 - response

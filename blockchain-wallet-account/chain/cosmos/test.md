@@ -6,7 +6,7 @@
 grpcurl -plaintext -d '{
   "chain": "Cosmos",
   "network": "mainnet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -25,7 +25,7 @@ grpcurl -plaintext -d '{
   "chain": "Cosmos",
   "network": "mainnet",
   "address": "cosmos1z79jxnsw64c20upyfu8rfe89pdsel48kfmzjgu"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 ```
@@ -45,7 +45,7 @@ grpcurl -plaintext -d '{
   "chain": "Cosmos",
   "network": "mainnet",
   "height": "22879895"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - reponse
 ```
@@ -85,7 +85,7 @@ grpcurl -plaintext -d '{
   "chain": "Cosmos",
   "network": "mainnet",
   "address": "cosmos19thxsunl9lzywglsndth5a278wtavawzzpv44q"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```

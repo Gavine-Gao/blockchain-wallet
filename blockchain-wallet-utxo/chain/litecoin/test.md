@@ -7,7 +7,7 @@ grpcurl -plaintext -d '{
   "chain": "Litecoin",
   "coin": "LTC",
   "network": "mainet"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getFee
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getFee
 ```
 - response
 ```
@@ -29,7 +29,7 @@ grpcurl -plaintext -d '{
   "chain": "Litecoin",
   "network": "mainet",
   "address": "MVRidwRCeGpmfDoeZ2wc1LtjMEuQ5gSxnq"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getAccount
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getAccount
 ```
 
 - response
@@ -61,7 +61,7 @@ grpcurl -plaintext -d '{
   "coin": "LTC",
   "network": "mainnet",
   "hash": "7e592bfe5d3cabbd6f03e73076b15b9f9b8d672235de8a8c5045268093f5d80f"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getTxByHash
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getTxByHash
 ```
 
 - response
@@ -152,7 +152,7 @@ grpcurl -plaintext -d '{
   "chain": "Litecoin",
   "network": "mainnet",
   "address": "MVRidwRCeGpmfDoeZ2wc1LtjMEuQ5gSxnq"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getUnspentOutputs
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getUnspentOutputs
 ```
 - response
 ```

@@ -7,7 +7,7 @@ grpcurl -plaintext -d '{
   "chain": "BitcoinCash",
   "coin": "BCH",
   "network": "mainet"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getFee
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getFee
 ```
 - response
 ```
@@ -30,7 +30,7 @@ grpcurl -plaintext -d '{
   "chain": "BitcoinCash",
   "network": "mainet",
   "address": "pqwjhsy0qsj8e6drfm5gua6lcdlqagczjq7vh5kak6"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getAccount
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getAccount
 ```
 
 - response
@@ -62,7 +62,7 @@ grpcurl -plaintext -d '{
   "coin": "BCH",
   "network": "mainnet",
   "hash": "6ccd96206224634d495ddd634cd53e0fdbc8b2a64e91c76ce8bebee4ba40183a"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getTxByHash
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getTxByHash
 ```
 
 - response
@@ -186,7 +186,7 @@ grpcurl -plaintext -d '{
   "chain": "BitcoinCash",
   "network": "mainnet",
   "address": "pqwjhsy0qsj8e6drfm5gua6lcdlqagczjq7vh5kak6"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getUnspentOutputs
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getUnspentOutputs
 ```
 - response
 ```

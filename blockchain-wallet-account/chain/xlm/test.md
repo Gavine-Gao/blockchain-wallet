@@ -5,7 +5,7 @@
 ```
 grpcurl -plaintext -d '{
   "chain": "Xlm"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -22,7 +22,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "address": "GAZEFFEFXCG2IOM7QBICUKCO3MOL3NVT3GORVBNS7TTETRQCQDYXPOQC"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 ```
@@ -39,7 +39,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "address": "GDYDI34YZQCP7WU726B626KTJIE6COPSXMWL2VLR7KNRHMNB6HLNFUJB"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```
@@ -58,7 +58,7 @@ grpcurl -plaintext -d '{
 ```
 grpcurl -plaintext -d '{
   "chain": "Xlm"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 ```
@@ -77,7 +77,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "height": "56013360"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 ```
 - response
 ```
@@ -188,7 +188,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "height": "56013360"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - response
 ```
@@ -226,7 +226,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "hash": "47476b985c63ee571505048c179a79226e0968ca35dca0f0c9a58968bddafc6b"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 - response
 ```
@@ -268,7 +268,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "base64Tx": "eyJhZGRyRnJvbSI6IkdEWURJMzRZWlFDUDdXVTcyNkI2MjZLVEpJRTZDT1BTWE1XTDJWTFI3S05SSE1OQjZITE5GVUpCIiwiYWRkclRvIjoiR0Q2QVJHTVlUNjVVVUM3RlFEQks3N0dYTUVPTkw0NEJMN0U1RzRXTDJORFdNSjdOU1dCVUJZUVEiLCJzZXF1ZW5jZUZyb20iOjIzOTc2MzM4MzkwODMwMjg1MywiYW1vdW50IjoiMC4xMjMifQ=="
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.createUnSignTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.createUnSignTransaction
 ```
 - response
 ```
@@ -287,7 +287,7 @@ grpcurl -plaintext -d '{
   "base64Tx": "AAAAAgAAAADwNG+YzAT/2p/Xg+15U0oJ4Tnyuyy9VXH6mxOxofHW0gAAAGQDU8+HAAAABgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAPA0b5jMBP/an9eD7XlTSgnhOfK7LL1VcfqbE7Gh8dbSAAAAAQAAAAD8CJmYn7tKC+WAwq/812Ec1fOBX8nTcsvTR2Yn7ZWDQAAAAAAAAAAAABLEsAAAAAAAAAAA",
   "signature": "rf+1IJ/1jNpl+2B7bveES3Cd1bCIPu55u3DN4qHTcawhJ/rNLdZkosgf09NhBYHWG2SfrJF3k4Knly57EKavAg==",
   "publicKey": "GDYDI34YZQCP7WU726B626KTJIE6COPSXMWL2VLR7KNRHMNB6HLNFUJB"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.buildSignedTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.buildSignedTransaction
 ```
 - response
 ```
@@ -304,7 +304,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Xlm",
   "rawTx": "AAAAAgAAAADwNG+YzAT/2p/Xg+15U0oJ4Tnyuyy9VXH6mxOxofHW0gAAAGQDU8+HAAAABgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAPA0b5jMBP/an9eD7XlTSgnhOfK7LL1VcfqbE7Gh8dbSAAAAAQAAAAD8CJmYn7tKC+WAwq/812Ec1fOBX8nTcsvTR2Yn7ZWDQAAAAAAAAAAAABLEsAAAAAAAAAABofHW0gAAAECt/7Ugn/WM2mX7YHtu94RLcJ3VsIg+7nm7cM3iodNxrCEn+s0t1mSiyB/T02EFgdYbZJ+skXeTgqeXLnsQpq8C"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.SendTx
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.SendTx
 ```
 - response
 ```

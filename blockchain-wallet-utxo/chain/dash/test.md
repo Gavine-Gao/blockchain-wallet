@@ -7,7 +7,7 @@ grpcurl -plaintext -d '{
   "chain": "Dash",
   "coin": "Dash",
   "network": "mainet"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getFee
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getFee
 ```
 - response
 ```
@@ -29,7 +29,7 @@ grpcurl -plaintext -d '{
   "chain": "Dash",
   "network": "mainet",
   "address": "Xrh6ouWeDBR8nLo95du2RLq8PbPZMe5vks"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getAccount
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getAccount
 ```
 
 - response
@@ -61,7 +61,7 @@ grpcurl -plaintext -d '{
   "coin": "Dash",
   "network": "mainnet",
   "hash": "90bede613044bbaf76bdcc35089bf5a14151a33fa03b22632fb285b0186d27d8"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getTxByHash
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getTxByHash
 ```
 
 - response
@@ -110,7 +110,7 @@ grpcurl -plaintext -d '{
   "chain": "Dash",
   "network": "mainnet",
   "address": "Xmz9uAZriHqZjan7PUajSjY2sUBwMkYoFe"
-}' 127.0.0.1:8289 dapplink.utxo.WalletUtxoService.getUnspentOutputs
+}' 127.0.0.1:8289 gavine.utxo.WalletUtxoService.getUnspentOutputs
 ```
 - response
 ```

@@ -9,7 +9,7 @@ grpcurl -plaintext -d '{
   "chain": "Zen",
   "network": "mainnet",
   "address": "znVmcBG35teueHJTuB1dQuc94XY733Z1Hec"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getAccount
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getAccount
 ```
 
 - response
@@ -29,7 +29,7 @@ grpcurl -plaintext -d '{
   "chain": "Zen",
   "coin": "Zen",
   "network": "mainnet"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getFee
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getFee
 ```
 - response
 ```
@@ -55,7 +55,7 @@ grpcurl -plaintext -d '{
   "address": "znVmcBG35teueHJTuB1dQuc94XY733Z1Hec",
   "page": 1,
   "pagesize": 10
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getTxByAddress
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getTxByAddress
 ```
 
 - response
@@ -163,7 +163,7 @@ grpcurl -plaintext -d '{
   "coin": "Zen",
   "network": "mainnet",
   "hash": "3ab4283b9d90aaee261fbe7065c88d7f20b2dae349c8039dbe55f55ee970df34"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getTxByHash
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getTxByHash
 ```
 - response
 ```
@@ -209,7 +209,7 @@ grpcurl -plaintext -d '{
   "coin": "Zen",
   "network": "mainnet",
   "rawTx": "0100000001a9b2524c650acf2e82ffa4b9ab38ee968a9d9c1e02ca7ec710d1257950102f22000000006a473044022048ba2f3c136b67ede9c17590698a89e4a09a54f2c1ba74a00ea37ca44776eb5102204ec00f3bb1638bfb72cb307c365c44e4ea93c73056dc810db14590a82b10aff0012103d95d0cbe7e72b6fc79e64394e0356c6ab8c662c71f06bbe35ff895bb03bdbaa2ffffffff01e0570e00000000003f76a9143362459b23db8f89d61e4224e2ba1b28cd10b88c88ac20f06a300e50d0b29b4218ec9018302362294b98734a3edf0da88f0c01000000000321511ab400000000"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.SendTx
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.SendTx
 ```
 
 - response
@@ -228,7 +228,7 @@ grpcurl -plaintext -d '{
   "chain": "Zen",
   "network": "mainnet",
   "publicKey": "03d95d0cbe7e72b6fc79e64394e0356c6ab8c662c71f06bbe35ff895bb03bdbaa2"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.convertAddress
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.convertAddress
 ```
 
 - response
@@ -247,7 +247,7 @@ grpcurl -plaintext -d '{
   "chain": "Zen",
   "network": "mainnet",
   "address": "znp5aYNr9f848b4pFH3pbX7wtRWrTaqb4cg"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.validAddress
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.validAddress
 ```
 
 - response
@@ -277,7 +277,7 @@ grpcurl -plaintext -d '{
     }
   ],
   "chain": "Zen"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.createUnSignTransaction
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.createUnSignTransaction
 ```
 
 - response
@@ -304,7 +304,7 @@ grpcurl -plaintext -d '{
   ],
   "chain": "Zen",
   "txData": "QX8DAQEIVFhPYmplY3QB/4AAAQQBCExvY2tUaW1lAQYAAQdWZXJzaW9uAQYAAQNJbnMB/4YAAQRPdXRzAf+KAAAAGv+FAgEBC1tddHlwZXMuSW5zAf+GAAH/ggAASv+BAwEBA0lucwH/ggABBAEGT3V0cHV0Af+EAAEGU2NyaXB0AQwAARBQcmV2U2NyaXB0UHViS2V5AQwAAQhTZXF1ZW5jZQEMAAAAJv+DAwEBBk91dHB1dAH/hAABAgEESGFzaAEMAAEEVm91dAEGAAAAG/+JAgEBDFtddHlwZXMuT3V0cwH/igAB/4gAACr/hwMBAQRPdXRzAf+IAAECAQhTYXRvc2hpcwEGAAEGU2NyaXB0AQwAAAD+AV7/gAIBAQEBAUA0MmJkYWY0NDRjMGNhOTJiMDFiMTNhNGM4MTA3Njg5MDQ1MzM0NzNmMDJkZTE3OTkxODcwNjc3MDY4MjMwMDM3AAJ+NzZhOTE0MzM2MjQ1OWIyM2RiOGY4OWQ2MWU0MjI0ZTJiYTFiMjhjZDEwYjg4Yzg4YWMyMGYwNmEzMDBlNTBkMGIyOWI0MjE4ZWM5MDE4MzAyMzYyMjk0Yjk4NzM0YTNlZGYwZGE4OGYwYzAxMDAwMDAwMDAwMzIxNTExYWI0AQhmZmZmZmZmZgABAQH9DjDQAX43NmE5MTRmYzNhYTg2MTJmZWIyOGZlYjAzZWZhNTA2NWQ1NzZkYmI2N2M5ZjhjODhhYzIwYmFiOTIyOThlY2I2YjIwOGVkYTU0NjkxZTAyZjE0NjUwZTk0ZjdmNGEzOTU4YTc3YTY5OTM2MDIwMDAwMDAwMDAzYWE1NjFhYjQAAA=="
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.buildSignedTransaction
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.buildSignedTransaction
 ```
 
 - response
@@ -325,7 +325,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Zen",
   "hash": "0000000003469fb58f05f2723405d5eca4003a485430ea9bfe22ac38f40e7b7c"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getBlockByHash
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getBlockByHash
 ```
 
 - response
@@ -351,7 +351,7 @@ grpcurl -plaintext -d '{
 ```
 grpcurl -plaintext -d '{
   "chain": "Zen"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getBlockByNumber
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getBlockByNumber
 ```
 
 - response
@@ -377,7 +377,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Zen",
   "height": "1724946"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getBlockByNumber
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getBlockByNumber
 ```
 
 - response
@@ -406,7 +406,7 @@ grpcurl -plaintext -d '{
   "chain": "Zen",
   "network": "mainnet",
   "address": "znVmcBG35teueHJTuB1dQuc94XY733Z1Hec"
-}' 127.0.0.1:8389 dapplink.utxo.WalletUtxoService.getUnspentOutputs
+}' 127.0.0.1:8389 gavine.utxo.WalletUtxoService.getUnspentOutputs
 ```
 - response
 ```

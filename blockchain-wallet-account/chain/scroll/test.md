@@ -4,7 +4,7 @@
 ```
 grpcurl -plaintext -d '{
   "chain": "Scroll"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 ```
@@ -25,7 +25,7 @@ grpcurl -plaintext -d '{
 ```
 grpcurl -plaintext -d '{
   "chain": "Scroll"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -46,7 +46,7 @@ grpcurl -plaintext -d '{
   "chain": "Scroll",
   "address": "0x4640531c3A8E6C575A4cA2890f4032844123fA33",
   "contractAddress": "0xb0643F7b3e2E2F10FE4e38728a763eC05f4ADeC3"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 - response
 ```
@@ -65,7 +65,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Scroll",
   "hash": "0x2001ed0c6416bfb072038186bb83de4ee63569ab0d5b1487a5c4c2b4f83ac9c7"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 - response
 ```
@@ -110,7 +110,7 @@ grpcurl -plaintext -d '{
   "chain": "Scroll",
   "address": "0x4640531c3A8E6C575A4cA2890f4032844123fA33",
   "contractAddress": "0xb0643F7b3e2E2F10FE4e38728a763eC05f4ADeC3"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```

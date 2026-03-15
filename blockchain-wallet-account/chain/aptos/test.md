@@ -6,7 +6,7 @@
 ./grpcurl.exe -plaintext -d '{
   "chain": "Aptos",
   "network": "mainnet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -24,7 +24,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "publicKey": "0xe9ad4b2f85daedb54f9ba61e09d12e3fb92c28913598c350583406ad8651ad8f"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.convertAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.convertAddress
 ```
 - reponse
 
@@ -45,7 +45,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "address": "0x3a8eef8a52bc873f5416e835e7ec7da6dd978e5f6a8a12d278df0c42ef01d131"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 ```
@@ -65,13 +65,13 @@
   "chain": "Aptos",
   "network": "mainnet",
   "height": "0"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 
 ./grpcurl.exe -plaintext -d '{
   "chain": "Aptos",
   "network": "mainnet",
   "height": "248978488"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - reponse
 ```
@@ -102,7 +102,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "hash": "0x049336ba3f1ebcdaebd3ca5e0154be616bfae95065a308b1c205daa283ef187e"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByHash
 ```
 
 - response
@@ -118,7 +118,7 @@
 ./grpcurl.exe -plaintext -d '{
   "chain": "Aptos",
   "height": "248978488"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 ```
 - response
 ```
@@ -138,7 +138,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "address": "0x8d2d7bcde13b2513617df3f98cdd5d0e4b9f714c6308b9204fe18ad900d92609"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```
@@ -158,7 +158,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "address": "0xb5e1cc180e603037887c9e9eb4a8a06774ebcddafac37ceea9e33f3b6552bb25"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 
 - response
@@ -190,7 +190,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "hash": "0x43531969ff8e93de962ea65e5609c2b05de3aa5e78933d8925613e75d3d53772"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 
 - response
@@ -232,7 +232,7 @@
   "chain": "Aptos",
   "network": "mainnet",
   "base64Tx": "eyJGcm9tQWRkcmVzcyI6IjB4ZmY5NmFkNTE3ZGIwZjU4NzI0Y2Y1MWI3ODdiNGQ3MTM5NmY2MzRmODczMGZmMmE2ZjBlNWQxYmYzOGRjYjUzYyIsIlB1YmxpY0tleSI6IiIsIlRvQWRkcmVzcyI6IjB4Y2U2OWIwMDA1MTAyYWRjMTUwYjFiMTNiZmM0ZWE5ZjZkYzNmYjkwOWNhYTgzYmQzMzY0ZmMwZjk0ODNlN2NkOSIsIkFtb3VudCI6MTAwMDB9"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.BuildUnSignTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.BuildUnSignTransaction
 ```
 
 - response

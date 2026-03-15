@@ -6,7 +6,7 @@
 grpcurl -plaintext -d '{
   "chain": "Sui",
   "network": "mainet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -25,7 +25,7 @@ grpcurl -plaintext -d '{
   "chain": "Sui",
   "network": "mainnet",
   "publicKey": "f1f191fd812f91d8663822071d1de5c499483cba398aed5019b76af4137f4cc5"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.convertAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.convertAddress
 ```
 - response
 
@@ -45,7 +45,7 @@ grpcurl -plaintext -d '{
   "chain": "Sui",
   "network": "mainnet",
   "address": "0x604b6f869a8848c53bf9b3e5a6c6caf02bffbb437e9d67a95052444d221c183e"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 
@@ -67,7 +67,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "address": "604b6f869a8848c53bf9b3e5a6c6caf02bffbb437e9d67a95052444d221c183e",
   "chain": "Sui"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 
 - response
@@ -87,7 +87,7 @@ grpcurl -plaintext -d '{
 ```
 grpcurl -plaintext -d '{
   "chain": "Sui"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 
@@ -107,7 +107,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Sui",
   "rawTx": "6OczDiFarOkCdIpTiOkQUB+PMvMw4Z50o1eBM/f1mGAWt6SQPHnekezKDECHXcJZpb/w2ZfyHPzyG3L80+5vAQ=="
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.SendTx
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.SendTx
 ```
 - response
 
@@ -128,7 +128,7 @@ grpcurl -plaintext -d '{
   "address": "0x95f1baf8c250c06fc2558f2ca5b35b371977f7182d381cf29b0f36f2f9da434a",
   "cursor": "YxjRfteuVNyPfJdTf3gZD6grHjUrkTgi8pQKQZqGHyz",
   "limit": 10
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 
 - response
@@ -327,7 +327,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Sui",
   "hash": "6c286gRAis7AsBnTQYz3ons2DAiAfMj1DL4x7iPnwNfW"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 - response
 

@@ -6,7 +6,7 @@
 grpcurl -plaintext -d '{
   "chain": "BscChain",
   "hash": "0x8e05cee916bea8e8a42102ea28e92eaec2f0d48330e4a65c22764ba743084aa7"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByHash
 ```
 - response
 ```
@@ -1938,7 +1938,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "BscChain",
   "height": "46742778"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 ```
 - response
 ```
@@ -3870,7 +3870,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "height": "46742778",
   "chain": "BscChain"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - response
 ```
@@ -3910,7 +3910,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "BscChain",
   "hash": "0x8e05cee916bea8e8a42102ea28e92eaec2f0d48330e4a65c22764ba743084aa7"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByHash
 ```
 - response
 ```

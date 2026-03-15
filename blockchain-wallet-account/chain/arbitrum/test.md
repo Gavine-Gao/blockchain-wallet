@@ -5,7 +5,7 @@
 grpcurl -plaintext -d '{
   "chain": "Arbitrum",
   "hash": "0x28e353426602ca061bb2cc4549b2693097f7b84903e9e1a234f888b3a9dc69f6"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByHash
 ```
 - response
 ```
@@ -56,7 +56,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Arbitrum",
   "height": "307055340"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 ```
 - response
 ```
@@ -107,7 +107,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "height": "307055340",
   "chain": "Arbitrum"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - response
 ```
@@ -147,7 +147,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Arbitrum",
   "hash": "0x28e353426602ca061bb2cc4549b2693097f7b84903e9e1a234f888b3a9dc69f6"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByHash
 ```
 - response
 ```

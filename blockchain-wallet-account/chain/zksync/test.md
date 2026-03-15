@@ -14,7 +14,7 @@
 grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -32,7 +32,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "publicKey": "048846b3ce4376e8d58c83c1c6420a784caa675d7f26c496f499585d09891af8fc9167a4b658b57b28211783cdee651caa8b5341b753fa39c995317670123f12d8"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.convertAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.convertAddress
 ```
 - response
 ```
@@ -50,7 +50,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "address": "0x8916B42a4DB16CA71080dBB0f3650162Ad1E7e3e"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 ```
@@ -67,7 +67,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Zksync",
   "height": "57458640"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 ```
 - response
 ```
@@ -101,7 +101,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Zksync",
   "hash": "0x604e1f80266e3306e8b9b093d2ae2c5dba9e45318eca968a8bac8d46a9f53283"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByHash
 ```
 - response
 ```
@@ -136,7 +136,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "hash": "0x604e1f80266e3306e8b9b093d2ae2c5dba9e45318eca968a8bac8d46a9f53283"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByHash
 ```
 - response
 ```
@@ -170,7 +170,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "height": "57458640"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - response
 ```
@@ -205,7 +205,7 @@ grpcurl -plaintext -d '{
   "network": "mainnet",
   "address": "0x000002c34bAE6DD7BeC72AcbA6aAAC1e01A359De",
   "contractAddress": "0x00"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```
@@ -223,7 +223,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 ```
@@ -242,7 +242,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "address": "0x000002c34bAE6DD7BeC72AcbA6aAAC1e01A359De"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 - response
 ```
@@ -272,7 +272,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "hash": "0xa5d66082c85a722424675105002724f2e8c442281daf1b82ca22136f1a242342"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 - response
 ```
@@ -298,7 +298,7 @@ grpcurl -plaintext -d '{
   "chain": "Zksync",
   "network": "mainnet",
   "base64Tx": "eyJjaGFpbl9pZCI6IjMyNCIsIm5vbmNlIjoxLCJtYXhfcHJpb3JpdHlfZmVlX3Blcl9nYXMiOiIxMDAwMDAwMDAwIiwibWF4X2ZlZV9wZXJfZ2FzIjoiMjAwMDAwMDAwMDAiLCJnYXNfbGltaXQiOjIxMDAwLCJmcm9tX2FkZHJlc3MiOiIweDgyNTY1YjY0ZTgwNjM2NzRDQWVhNzAwMzk3OTI4MGY0ZGJDM2FBRTciLCJ0b19hZGRyZXNzIjoiMHg4OTE2QjQyYTREQjE2Q0E3MTA4MGRCQjBmMzY1MDE2MkFkMUU3ZTNlIiwiYW1vdW50IjoiMTAwMDAwMDAwMDAwMDAwMDAwMCIsImNvbnRyYWN0X2FkZHJlc3MiOiIweDAwIn0="
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.buildUnSignTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.buildUnSignTransaction
 ```
 - response
 ```
@@ -317,7 +317,7 @@ grpcurl -plaintext -d '{
   "network": "mainnet",
   "base64Tx": "eyJjaGFpbl9pZCI6IjMyNCIsIm5vbmNlIjoxLCJtYXhfcHJpb3JpdHlfZmVlX3Blcl9nYXMiOiIxMDAwMDAwMDAwIiwibWF4X2ZlZV9wZXJfZ2FzIjoiMjAwMDAwMDAwMDAiLCJnYXNfbGltaXQiOjIxMDAwLCJmcm9tX2FkZHJlc3MiOiIweDgyNTY1YjY0ZTgwNjM2NzRDQWVhNzAwMzk3OTI4MGY0ZGJDM2FBRTciLCJ0b19hZGRyZXNzIjoiMHg4OTE2QjQyYTREQjE2Q0E3MTA4MGRCQjBmMzY1MDE2MkFkMUU3ZTNlIiwiYW1vdW50IjoiMTAwMDAwMDAwMDAwMDAwMDAwMCIsImNvbnRyYWN0X2FkZHJlc3MiOiIweDAwIn0=",
   "signature": "52cf3aa0a66dfe64b6ec18f0bef0e0c90371fc5117c808a024d2c56db5e690f91af6509a8a619438b5babe2c352d2fc20fbf62bffffe72538e0eaa466ad327d601"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.buildSignedTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.buildSignedTransaction
 ```
 - response
 ```
@@ -335,7 +335,7 @@ grpcurl -plaintext -d '{
   "network": "mainnet",
   "publicKey": "048846b3ce4376e8d58c83c1c6420a784caa675d7f26c496f499585d09891af8fc9167a4b658b57b28211783cdee651caa8b5341b753fa39c995317670123f12d8",
   "signature": "0x6e959617f7fdfff5379834171f28680021219479bb189a51c312a7f584224269:52cf3aa0a66dfe64b6ec18f0bef0e0c90371fc5117c808a024d2c56db5e690f91af6509a8a619438b5babe2c352d2fc20fbf62bffffe72538e0eaa466ad327d601"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.verifySignedTransaction
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.verifySignedTransaction
 ```
 - response
 ```

@@ -6,7 +6,7 @@
 grpcurl -plaintext -d '{
   "chain": "Polygon",
   "network": "mainnet"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -25,7 +25,7 @@ grpcurl -plaintext -d '{
   "chain": "Polygon",
   "network": "mainnet",
   "publicKey": "02e993166ac8fb56c438a2a0e1266f33b54dfe7b79f738d9945dbbbebf6e367c55"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.convertAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.convertAddress
 ```
 - reponse
 
@@ -45,7 +45,7 @@ grpcurl -plaintext -d '{
   "chain": "Polygon",
   "network": "mainnet",
   "address": "0x8358d847Fc823097380c4996A3D3485D9D86941f"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.validAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.validAddress
 ```
 - response
 ```
@@ -64,7 +64,7 @@ grpcurl -plaintext -d '{
   "height": "66444218",
   "network": "mainnet",
   "chain": "Polygon"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByNumber
 ```
 - reponse
 ```
@@ -104,7 +104,7 @@ grpcurl -plaintext -d '{
   "chain": "Polygon",
   "network": "mainnet",
   "hash": "0xbd56b33a34ce67fa1bee83da0c0135f16af5296b2d6ff97750f76f52c67eceb6"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockHeaderByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockHeaderByHash
 ```
 
 - response
@@ -143,7 +143,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "height": "21118661",
   "chain": "Polygon"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getBlockByNumber
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getBlockByNumber
 
 
 ```
@@ -789,7 +789,7 @@ grpcurl -plaintext -d '{
   "chain": "Polygon",
   "network": "mainnet",
   "address": "0x67B94473D81D0cd00849D563C94d0432Ac988B49"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 
 
 ```
@@ -813,7 +813,7 @@ grpcurl -plaintext -d '{
   "network": "mainnet",
   "address": "0x8916B42a4DB16CA71080dBB0f3650162Ad1E7e3e"
 
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 
 - response

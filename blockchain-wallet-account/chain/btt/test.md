@@ -4,7 +4,7 @@
 ```
 grpcurl -plaintext -d '{
   "chain": "Btt"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getFee
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getFee
 ```
 - response
 ```
@@ -25,7 +25,7 @@ grpcurl -plaintext -d '{
 ```
 grpcurl -plaintext -d '{
   "chain": "Btt"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getSupportChains
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getSupportChains
 ```
 - response
 ```
@@ -46,7 +46,7 @@ grpcurl -plaintext -d '{
   "chain": "Btt",
   "address": "0xDDA22000e1bCC0c70C8b1947CE7074df1DC5B80B",
   "contractAddress": "0x1Bdd8878252DaddD3Af2ba30628813271294eDc0"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByAddress
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByAddress
 ```
 - response
 ```
@@ -65,7 +65,7 @@ grpcurl -plaintext -d '{
 grpcurl -plaintext -d '{
   "chain": "Btt",
   "hash": "0xfe66799cd6de5b8a6a9657bf91cb64101d8c0f511b52ab644b43bb92688d2a26"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getTxByHash
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getTxByHash
 ```
 - response
 ```
@@ -110,7 +110,7 @@ grpcurl -plaintext -d '{
   "chain": "Btt",
   "address": "0xDDA22000e1bCC0c70C8b1947CE7074df1DC5B80B",
   "contractAddress": "0x1Bdd8878252DaddD3Af2ba30628813271294eDc0"
-}' 127.0.0.1:8189 dapplink.account.WalletAccountService.getAccount
+}' 127.0.0.1:8189 gavine.account.WalletAccountService.getAccount
 ```
 - response
 ```
